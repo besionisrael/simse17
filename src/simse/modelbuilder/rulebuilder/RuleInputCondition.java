@@ -21,9 +21,9 @@ public class RuleInputCondition implements Cloneable {
       RuleInputCondition cl = (RuleInputCondition) (super.clone());
       cl.guard = guard;
       if (value instanceof Integer) {
-        cl.value = new Integer(((Integer) value).intValue());
+        cl.value = ((Integer) value);
       } else if (value instanceof Double) {
-        cl.value = new Double(((Double) value).doubleValue());
+        cl.value = ((Double) value);
       }
       return cl;
     } catch (CloneNotSupportedException c) {

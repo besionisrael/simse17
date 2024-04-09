@@ -122,7 +122,7 @@ public class SopFileManipulator {
                   if (keyAtt.getType() == AttributeTypes.INTEGER) { // integer
                                                                   	// attribute
                     try {
-                      Integer keyInt = new Integer(keyAttVal);
+                      Integer keyInt = Integer.valueOf(keyAttVal);
                       // try to get the object from created objects:
                       SimSEObject tempObj = objects.getObject(
                           SimSEObjectTypeTypes
@@ -151,7 +151,7 @@ public class SopFileManipulator {
                   } else if (keyAtt.getType() == AttributeTypes.DOUBLE) { 
                   	// double attribute
                     try {
-                      Double keyDouble = new Double(keyAttVal);
+                      Double keyDouble = Double.valueOf(keyAttVal);
                       // try to get the object from created objects:
                       SimSEObject tempObj = objects.getObject(
                           SimSEObjectTypeTypes
@@ -179,7 +179,7 @@ public class SopFileManipulator {
                     }
                   } else if (keyAtt.getType() == AttributeTypes.BOOLEAN) { 
                   	// boolean attribute
-                    Boolean keyBool = new Boolean(keyAttVal);
+                    Boolean keyBool = Boolean.valueOf(keyAttVal);
                     // try to get the object from created objects:
                     SimSEObject tempObj = objects.getObject(
                         SimSEObjectTypeTypes

@@ -333,9 +333,9 @@ public class ActionTypeParticipantConstraintsInfoForm extends JFrame implements
         String valString = (String) (((JComboBox) (values.elementAt(i)))
             .getSelectedItem());
         if (valString.equals("True")) {
-          attConst.setValue(new Boolean(true));
+          attConst.setValue(true);
         } else if (valString.equals("False")) {
-          attConst.setValue(new Boolean(false));
+          attConst.setValue(false);
         } else if (valString.equals("")) {
           attConst.setValue(null);
         }
@@ -349,7 +349,7 @@ public class ActionTypeParticipantConstraintsInfoForm extends JFrame implements
                                                                 	// attribute
           try {
             int intVal = Integer.parseInt(valString);
-            attConst.setValue(new Integer(intVal));
+            attConst.setValue(intVal);
           } catch (NumberFormatException e) {
             System.out.println(e.getMessage()); // note: validateInput() should
                                                 // have already been called
@@ -362,7 +362,7 @@ public class ActionTypeParticipantConstraintsInfoForm extends JFrame implements
                                                                	 // attribute
           try {
             double doubleVal = Double.parseDouble(valString);
-            attConst.setValue(new Double(doubleVal));
+            attConst.setValue(doubleVal);
           } catch (NumberFormatException e) {
             System.out.println(e.getMessage()); // note: validateInput() should
                                                 // have already been called
@@ -438,9 +438,9 @@ public class ActionTypeParticipantConstraintsInfoForm extends JFrame implements
         Boolean boolVal = (Boolean) (attConst.getValue());
         if (boolVal == null) {
           valList.setSelectedItem("");
-        } else if (boolVal.booleanValue() == true) {
+        } else if (boolVal == true) {
           valList.setSelectedItem("True");
-        } else if (boolVal.booleanValue() == false) {
+        } else if (boolVal == false) {
           valList.setSelectedItem("False");
         }
         valPanel.add(valList);

@@ -24,11 +24,11 @@ public class NumericalAttribute extends Attribute {
     this.maxNumFractionDigits = maxNumFractionDigits;
 
     if (type == AttributeTypes.INTEGER) {
-    	this.min = (min != null) ? new Integer(min.intValue()) : null;
-    	this.max = (max != null) ? new Integer(max.intValue()) : null;
+    	this.min = (min != null) ? Integer.valueOf(min.intValue()) : null;
+    	this.max = (max != null) ? Integer.valueOf(max.intValue()) : null;
     } else if (type == AttributeTypes.DOUBLE) {
-      this.min = (min != null) ? new Double(min.doubleValue()) : null;
-      this.max = (max != null) ? new Double(max.doubleValue()) : null;
+      this.min = (min != null) ? Double.valueOf(min.doubleValue()) : null;
+      this.max = (max != null) ? Double.valueOf(max.doubleValue()) : null;
     }
   }
 
@@ -71,19 +71,19 @@ public class NumericalAttribute extends Attribute {
   }
 
   public void setMinValue(Integer minimum) {
-    min = new Integer(minimum.intValue());
+     min = minimum;
   }
 
   public void setMinValue(Double minimum) {
-    min = new Double(minimum.doubleValue());
+    min = minimum;
   }
 
   public void setMaxValue(Integer maximum) {
-    max = new Integer(maximum.intValue());
+    max = maximum;
   }
 
   public void setMaxValue(Double maximum) {
-    max = new Double(maximum.doubleValue());
+    max = maximum;
   }
 
   // sets the min value to boundless

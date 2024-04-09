@@ -206,8 +206,8 @@ public class SimSEMapGenerator implements CodeGeneratorConstants {
 
           // x y locations:
           Vector<Integer> xys = new Vector<Integer>();
-          xys.add(new Integer(tmpUser.getXLocation()));
-          xys.add(new Integer(tmpUser.getYLocation()));
+          xys.add(tmpUser.getXLocation());
+          xys.add(tmpUser.getYLocation());
           objsToXYLocs.put(tmpUser.getSimSEObject(), xys);
 
           writer.write(NEWLINE);

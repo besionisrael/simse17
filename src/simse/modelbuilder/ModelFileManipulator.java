@@ -285,7 +285,7 @@ public class ModelFileManipulator {
         SimSEObjectType tempObj = objTypes.elementAt(i);
         writer.write(BEGIN_OBJECT_TYPE_TAG);
         writer.write(NEWLINE);
-        writer.write((new Integer(tempObj.getType())).toString());
+        writer.write((Integer.valueOf(tempObj.getType())).toString());
         writer.write(NEWLINE);
         writer.write(tempObj.getName());
         writer.write(NEWLINE);
@@ -297,7 +297,7 @@ public class ModelFileManipulator {
           writer.write(NEWLINE);
           writer.write(tempAtt.getName());
           writer.write(NEWLINE);
-          writer.write((new Integer(tempAtt.getType())).toString());
+          writer.write((Integer.valueOf(tempAtt.getType())).toString());
           writer.write(NEWLINE);
 
           // visible:
@@ -393,7 +393,7 @@ public class ModelFileManipulator {
         SimSEObject tempObj = objs.elementAt(i);
         writer.write(BEGIN_OBJECT_TAG);
         writer.write(NEWLINE);
-        writer.write((new Integer(tempObj.getSimSEObjectType().getType()))
+        writer.write((Integer.valueOf(tempObj.getSimSEObjectType().getType()))
             .toString());
         writer.write(NEWLINE);
         writer.write(tempObj.getName());
@@ -460,7 +460,7 @@ public class ModelFileManipulator {
         writer.write(NEWLINE);
         
         // joining
-        writer.write(new Boolean(tempAct.isJoiningAllowed()).toString());
+        writer.write(Boolean.toString(tempAct.isJoiningAllowed()));
         writer.write(NEWLINE);
 
         Vector<ActionTypeParticipant> participants = 
@@ -537,8 +537,8 @@ public class ModelFileManipulator {
                                                                     // trigger
             writer.write(ActionTypeTrigger.RANDOM); // random trigger type
             writer.write(NEWLINE);
-            writer.write((new Double(((RandomActionTypeTrigger) (tempTrig))
-                .getFrequency())).toString()); // frequency
+            writer.write((Double.valueOf(((RandomActionTypeTrigger) (tempTrig))
+                    .getFrequency())).toString()); // frequency
             writer.write(NEWLINE);
           } else if (tempTrig instanceof UserActionTypeTrigger) { // user 
           																												// trigger
@@ -560,11 +560,11 @@ public class ModelFileManipulator {
           }
           writer.write(NEWLINE);
           // priority:
-          writer.write((new Integer(tempTrig.getPriority())).toString());
+          writer.write((Integer.valueOf(tempTrig.getPriority())).toString());
           writer.write(NEWLINE);
           // is game-ending trigger:
           writer
-              .write((new Boolean(tempTrig.isGameEndingTrigger())).toString());
+              .write((Boolean.valueOf(tempTrig.isGameEndingTrigger())).toString());
           writer.write(NEWLINE);
           // participant triggers:
           Vector<ActionTypeParticipantTrigger> partTriggers = 
@@ -611,7 +611,7 @@ public class ModelFileManipulator {
                   writer.write(EMPTY_VALUE);
                 }
                 writer.write(NEWLINE);
-                writer.write((new Boolean(tempAttConst.isScoringAttribute()))
+                writer.write((Boolean.valueOf(tempAttConst.isScoringAttribute()))
                     .toString());
                 writer.write(NEWLINE);
                 writer.write(END_ATTRIBUTE_CONSTRAINT_TAG);
@@ -645,8 +645,8 @@ public class ModelFileManipulator {
                                                                       // dest
             writer.write(ActionTypeDestroyer.RANDOM); // random destroyer type
             writer.write(NEWLINE);
-            writer.write((new Double(((RandomActionTypeDestroyer) (tempDest))
-                .getFrequency())).toString()); // frequency
+            writer.write((Double.valueOf(((RandomActionTypeDestroyer) (tempDest))
+                    .getFrequency())).toString()); // frequency
             writer.write(NEWLINE);
           } else if (tempDest instanceof UserActionTypeDestroyer) { // user
                                                                     // destroyer
@@ -659,8 +659,8 @@ public class ModelFileManipulator {
                                                                      // dest
             writer.write(ActionTypeDestroyer.TIMED);
             writer.write(NEWLINE);
-            writer.write((new Integer(((TimedActionTypeDestroyer) (tempDest))
-                .getTime())).toString()); // time
+            writer.write((Integer.valueOf(((TimedActionTypeDestroyer) (tempDest))
+                    .getTime())).toString()); // time
             writer.write(NEWLINE);
           }
           // destroyer text:
@@ -672,10 +672,10 @@ public class ModelFileManipulator {
           }
           writer.write(NEWLINE);
           // priority:
-          writer.write((new Integer(tempDest.getPriority())).toString());
+          writer.write((Integer.valueOf(tempDest.getPriority())).toString());
           writer.write(NEWLINE);
           // is game-ending destroyer:
-          writer.write((new Boolean(tempDest.isGameEndingDestroyer()))
+          writer.write((Boolean.valueOf(tempDest.isGameEndingDestroyer()))
               .toString());
           writer.write(NEWLINE);
           // participant destroyers:
@@ -724,7 +724,7 @@ public class ModelFileManipulator {
                   writer.write(EMPTY_VALUE);
                 }
                 writer.write(NEWLINE);
-                writer.write((new Boolean(tempAttConst.isScoringAttribute()))
+                writer.write((Boolean.valueOf(tempAttConst.isScoringAttribute()))
                     .toString());
                 writer.write(NEWLINE);
                 writer.write(END_ATTRIBUTE_CONSTRAINT_TAG);
@@ -761,16 +761,16 @@ public class ModelFileManipulator {
             writer.write(tempRule.getName()); // rule name
             writer.write(NEWLINE);
             // rule priority:
-            writer.write((new Integer(tempRule.getPriority())).toString()); 
+            writer.write((Integer.valueOf(tempRule.getPriority())).toString()); 
             writer.write(NEWLINE);
             writer.write(tempAct.getName()); // action name
             writer.write(NEWLINE);
             // rule timing:
-            writer.write((new Integer(tempRule.getTiming())).toString()); 
+            writer.write((Integer.valueOf(tempRule.getTiming())).toString()); 
             writer.write(NEWLINE);
             // rule execute on join status:
             writer
-                .write((new Boolean(tempRule.getExecuteOnJoins())).toString()); 
+                .write((Boolean.valueOf(tempRule.getExecuteOnJoins())).toString()); 
             writer.write(NEWLINE);
 
             // explanatory tool visibility
@@ -812,8 +812,8 @@ public class ModelFileManipulator {
                 writer.write(NEWLINE);
                 ParticipantTypeRuleEffect tempPartTypeEffect = 
                 	partTypeEffects.elementAt(m);
-                writer.write((new Integer(tempPartTypeEffect
-                    .getSimSEObjectType().getType())).toString());
+                writer.write((Integer.valueOf(tempPartTypeEffect
+                        .getSimSEObjectType().getType())).toString());
                 // SimSEObjectTypeType
                 writer.write(NEWLINE);
                 // SimSEObjectType name:
@@ -903,7 +903,7 @@ public class ModelFileManipulator {
               writer.write(tempInput.getPrompt()); // input prompt
               writer.write(NEWLINE);
               // cancellable:
-              writer.write((new Boolean(tempInput.isCancelable())).toString()); 
+              writer.write((Boolean.valueOf(tempInput.isCancelable())).toString()); 
               writer.write(NEWLINE);
               // input condition:
               writer.write(BEGIN_RULE_INPUT_CONDITION_TAG);
@@ -937,12 +937,12 @@ public class ModelFileManipulator {
             writer.write(tempRule.getName());
             writer.write(NEWLINE);
             // rule priority:
-            writer.write((new Integer(tempRule.getPriority())).toString()); 
+            writer.write((Integer.valueOf(tempRule.getPriority())).toString()); 
             writer.write(NEWLINE);
             writer.write(tempAct.getName()); // action name
             writer.write(NEWLINE);
             // rule timing:
-            writer.write((new Integer(tempRule.getTiming())).toString()); 
+            writer.write((Integer.valueOf(tempRule.getTiming())).toString()); 
             writer.write(NEWLINE);
 
             // explanatory tool visibility
@@ -972,7 +972,7 @@ public class ModelFileManipulator {
               writer.write(NEWLINE);
               SimSEObject tempObj = ruleObjs.elementAt(k);
               writer
-                  .write((new Integer(tempObj.getSimSEObjectType().getType()))
+                  .write((Integer.valueOf(tempObj.getSimSEObjectType().getType()))
                       .toString()); // SimSEObjectTypeType
               writer.write(NEWLINE);
               // SimSEObjectType name:
@@ -1011,12 +1011,12 @@ public class ModelFileManipulator {
             writer.write(tempRule.getName());
             writer.write(NEWLINE);
             // rule priority:
-            writer.write((new Integer(tempRule.getPriority())).toString()); 
+            writer.write((Integer.valueOf(tempRule.getPriority())).toString()); 
             writer.write(NEWLINE);
             writer.write(tempAct.getName()); // action name
             writer.write(NEWLINE);
             // rule timing:
-            writer.write((new Integer(tempRule.getTiming())).toString()); 
+            writer.write((Integer.valueOf(tempRule.getTiming())).toString()); 
             writer.write(NEWLINE);
 
             // explanatory tool visibility

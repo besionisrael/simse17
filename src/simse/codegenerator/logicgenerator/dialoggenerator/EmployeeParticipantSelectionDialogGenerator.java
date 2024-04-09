@@ -62,6 +62,7 @@ public class EmployeeParticipantSelectionDialogGenerator implements
       writer.write("import simse.state.*;");
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write("import simse.adts.actions.*;");
       writer.write(NEWLINE);
@@ -659,11 +660,11 @@ public class EmployeeParticipantSelectionDialogGenerator implements
           if (tempType.getKey().getType() == AttributeTypes.STRING) {
             writer.write("keyValStr);");
           } else if (tempType.getKey().getType() == AttributeTypes.BOOLEAN) {
-            writer.write("(new Boolean(keyValStr)).booleanValue());");
+            writer.write("(keyValStr).booleanValue());");
           } else if (tempType.getKey().getType() == AttributeTypes.INTEGER) {
-            writer.write("(new Integer(keyValStr)).intValue());");
+            writer.write("(keyValStr).intValue());");
           } else if (tempType.getKey().getType() == AttributeTypes.DOUBLE) {
-            writer.write("(new Double(keyValStr)).doubleValue());");
+            writer.write("(keyValStr).doubleValue());");
           }
           writer.write(NEWLINE);
           writer.write("if(a != null)");

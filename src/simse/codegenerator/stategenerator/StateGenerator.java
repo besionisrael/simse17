@@ -104,7 +104,7 @@ public class StateGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("clock = new Clock(logger);");
       writer.write(NEWLINE);
-      writer.write("score = new Integer(-1);");
+      writer.write("score = -1 ;");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);
@@ -139,13 +139,13 @@ public class StateGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
 			writer.write("if (score instanceof Integer) {");
 			writer.write(NEWLINE);
-			writer.write("cl.score = new Integer(score.intValue());");
+			writer.write("cl.score = score.intValue();");
 			writer.write(NEWLINE);
 			writer.write(CLOSED_BRACK);
 			writer.write(NEWLINE);
 			writer.write("else { // Double");
 			writer.write(NEWLINE);
-			writer.write("cl.score = new Double(score.doubleValue());");
+			writer.write("cl.score = score.doubleValue();");
 			writer.write(NEWLINE);
 			writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);

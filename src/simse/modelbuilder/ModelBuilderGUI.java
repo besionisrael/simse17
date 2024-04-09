@@ -35,6 +35,8 @@ import java.io.File;
 import java.io.IOException;
 
 import java.util.ArrayList;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.Vector;
 
 import javax.swing.JFileChooser;
@@ -81,13 +83,16 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
   private JMenuBar menuBar; // menu bar at top of window
 
   // File menu:
-  private JMenu fileMenu; // file menu
+  private static JMenu fileMenu; // file menu
   private JMenuItem newItem; // menu item in "File" menu
   private JMenuItem openItem; // menu item in "File" menu
   private JMenuItem closeItem; // menu item in "File" menu
   private JMenuItem saveItem; // menu item in "File" menu
   private JMenuItem saveAsItem; // menu item in "File" menu
   private JMenuItem exitItem; // menu item in "File" menu
+  
+  //Langage Menu
+
 
   // Edit menu:
   private JMenu editMenu; // edit menu
@@ -122,7 +127,7 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
     fileModSinceLastSave = false;
 
     // Set window title:
-    setTitle("SimSE Model Builder");
+    setTitle("SimSE Model Builder 17");
 
     // Create main panel:
     mainPane = new JTabbedPane();
@@ -174,6 +179,7 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
     // "New" menu item:
     newItem = new JMenuItem("New");
     fileMenu.add(newItem);
+    
     newItem.addActionListener(this);
     // "Open" menu item:
     openItem = new JMenuItem("Open");
@@ -213,6 +219,9 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
     narrativeItem.addActionListener(this);
 
     menuBar.add(editMenu);
+    
+    
+    
 
     // Prioritize menu:
     prioritizeMenu = new JMenu("Prioritize"); // "Prioritize" menu
@@ -244,6 +253,8 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
     generateMenu.add(generateSimItem);
     generateSimItem.addActionListener(this);
     menuBar.add(generateMenu);
+    
+   
 
     // Add menu bar to this frame:
     this.setJMenuBar(menuBar);
@@ -271,11 +282,16 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
 
   // handles user actions
   public void actionPerformed(ActionEvent evt) { 
-    Object source = evt.getSource(); // get which component the action came from
+    Object source = evt.getSource();// get which component the action came from
+    
+    
+    
     if (source == newItem) {
       newFile();
     } else if (source == openItem) {
+        
       openFile();
+      
     } else if (source == closeItem) {
       if (openFile != null) { // a file is open
         closeFile();
@@ -417,7 +433,14 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
     if (e.getSource() == prioritizeMenu) {
       resetRulesMenu();
     }
+    
   }
+  
+
+  
+ 
+  
+  
 
   public void menuCanceled(MenuEvent e) {}
 
@@ -471,7 +494,7 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
   // make sit so there's no open file in the GUI
   private void setNoOpenFile() {
     openFile = null;
-    setTitle("SimSE Model Builder");
+    setTitle("SimSE Model Builder 17");
     fileModSinceLastSave = false;
     options.clearAll();
     objectBuilder.setNoOpenFile();
@@ -488,7 +511,7 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
 
   // resets the window title to reflect the current file open
   private void resetWindowTitle() {
-    setTitle(("SimSE Model Builder - [") + openFile.getName() + ("]"));
+    setTitle(("SimSE Model Builder 17 - [") + openFile.getName() + ("]"));
   }
 
   // creates a new .mdl file
@@ -622,9 +645,14 @@ public class ModelBuilderGUI extends JFrame implements ActionListener,
   public ObjectBuilderGUI getObjectBuilderGUI() {
     return objectBuilder;
   }
+  
+ 
 
   public static void main(String[] args) {
     new ModelBuilderGUI();
+      
+        
+        
   }
 
   public class ExitListener extends WindowAdapter {

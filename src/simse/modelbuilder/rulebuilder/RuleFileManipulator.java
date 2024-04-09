@@ -68,7 +68,7 @@ public class RuleFileManipulator {
               		ModelFileManipulator.BEGIN_EFFECT_RULE_TAG)) {
                 String ruleName = reader.readLine(); // get the rule name
                 // get the rule priority:
-                Integer priority = new Integer(reader.readLine()); 
+                Integer priority = Integer.valueOf(reader.readLine()); 
                 // get the name of the ActionType this rule is associated with:
                 String actionName = reader.readLine(); 
                 // attempt to find it in the actionTypes:
@@ -422,8 +422,7 @@ public class RuleFileManipulator {
                       // set the prompt from the file:
                       tempInput.setPrompt(reader.readLine()); 
                       // set the cancelable value from the file:
-                      tempInput.setCancelable((new Boolean(reader.readLine()))
-                          .booleanValue()); 
+                      tempInput.setCancelable((Boolean.parseBoolean(reader.readLine()))); 
                       // read in BEING_RULE_INPUT_CONDITION_TAG:
                       reader.readLine(); 
                       // set guard from file:
@@ -435,12 +434,10 @@ public class RuleFileManipulator {
                       																				 // condition val
                         if (tempInput.getType().equals(InputType.INTEGER)) { 
                         	// integer input
-                          tempInput.getCondition().setValue(
-                              new Integer(conditionVal)); // set the value
+                          tempInput.getCondition().setValue(Integer.valueOf(conditionVal)); // set the value
                         } else if (tempInput.getType().equals(
                         		InputType.DOUBLE)) { // double input
-                          tempInput.getCondition().setValue(
-                              new Double(conditionVal)); // set the value
+                          tempInput.getCondition().setValue(Double.valueOf(conditionVal)); // set the value
                         }
                         // won't be string or boolean -- those don't have
                         // conditions
@@ -457,7 +454,7 @@ public class RuleFileManipulator {
               	// beginning of CreateObjectsRule
                 String ruleName = reader.readLine(); // get the name
                 // get the priority:
-                Integer priority = new Integer(reader.readLine()); 
+                Integer priority = Integer.valueOf(reader.readLine()); 
                 // get the name of the ActionType this rule is associated with:
                 String actionName = reader.readLine(); 
                 // attempt to find it in the actionTypes:
@@ -645,15 +642,15 @@ public class RuleFileManipulator {
                                 if (tempAtt.getType() == 
                                 	AttributeTypes.INTEGER) { // integer att
                                 	// set value:
-                                  tempInstAtt.setValue(new Integer(value)); 
+                                  tempInstAtt.setValue(Integer.valueOf(value)); 
                                 } else if (tempAtt.getType() == 
                                 	AttributeTypes.DOUBLE) { // double att
                                 	// set value:
-                                  tempInstAtt.setValue(new Double(value)); 
+                                  tempInstAtt.setValue(Double.valueOf(value)); 
                                 } else if (tempAtt.getType() == 
                                 	AttributeTypes.BOOLEAN) { // boolean att
                                 	// set value:
-                                  tempInstAtt.setValue(new Boolean(value)); 
+                                  tempInstAtt.setValue(Boolean.valueOf(value)); 
                                 } else { // string att
                                   tempInstAtt.setValue(value); // set value
                                 }
@@ -695,7 +692,7 @@ public class RuleFileManipulator {
               	// beginning of DestroyObjectsRule
                 String ruleName = reader.readLine(); // get the name
                 // get the priority:
-                Integer priority = new Integer(reader.readLine()); 
+                Integer priority = Integer.valueOf(reader.readLine()); 
                 // get the name of the ActionType this rule is associated with:
                 String actionName = reader.readLine(); 
                 // attempt to find it in the actionTypes:
@@ -862,14 +859,11 @@ public class RuleFileManipulator {
                                       if (att.getType() == 
                                       	AttributeTypes.BOOLEAN) { // boolean
                                                                   // attribute
-                                        if (value.equals((new Boolean(true))
-                                            .toString())) {
+                                        if (value.equals(true)) {
                                           newAttConst
-                                              .setValue(new Boolean(true));
-                                        } else if (value.equals((new Boolean(
-                                            false)).toString())) {
-                                          newAttConst.setValue(new Boolean(
-                                              false));
+                                              .setValue(true);
+                                        } else if (value.equals(false)) {
+                                          newAttConst.setValue(false);
                                         } else { // a non-boolean value
                                           warnings
                                               .add(SimSEObjectTypeTypes
@@ -899,7 +893,7 @@ public class RuleFileManipulator {
                                                                   // attribute
                                         try {
                                           boolean valid = true;
-                                          Integer intVal = new Integer(value);
+                                          Integer intVal = Integer.valueOf(value);
                                           NumericalAttribute numAtt =
                                           	(NumericalAttribute)att;
                                           if (!numAtt.isMinBoundless()) {
@@ -973,8 +967,7 @@ public class RuleFileManipulator {
                                             }
                                           }
                                           if (valid) {
-                                            newAttConst.setValue(new Integer(
-                                                value));
+                                            newAttConst.setValue(Integer.valueOf(value));
                                           }
                                         } catch (NumberFormatException e) {
                                           warnings
@@ -1006,7 +999,7 @@ public class RuleFileManipulator {
                                                                  // attribute
                                         try {
                                           boolean valid = true;
-                                          Double doubleVal = new Double(value);
+                                          Double doubleVal = Double.valueOf(value);
                                           NumericalAttribute numAtt =
                                           	(NumericalAttribute)att;
                                           if (!numAtt.isMinBoundless()) {
@@ -1046,7 +1039,7 @@ public class RuleFileManipulator {
                                           }
                                           if (!numAtt.isMaxBoundless()) {
                                           // has a maximum constraining value
-                                            if (doubleVal.doubleValue() > 
+                                            if (doubleVal > 
                                             numAtt.getMaxValue().
                                             doubleValue()) { // outside of range
                                               warnings
@@ -1079,8 +1072,7 @@ public class RuleFileManipulator {
                                             }
                                           }
                                           if (valid) {
-                                            newAttConst.setValue(new Double(
-                                                value));
+                                            newAttConst.setValue(Double.valueOf(value));
                                           }
                                         } catch (NumberFormatException e) {
                                           warnings

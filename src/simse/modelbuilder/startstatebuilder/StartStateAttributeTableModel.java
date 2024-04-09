@@ -114,7 +114,7 @@ public class StartStateAttributeTableModel extends AbstractTableModel {
         // Initialize attribute visible variable:
         temp = new Vector<Object>();
         for (int i = 0; i < attributes.size(); i++) {
-          temp.add(new Boolean(attributes.elementAt(i).isVisible()));
+          temp.add(attributes.elementAt(i).isVisible());
         }
         if (data.size() < 3) { // first-time initialization
           data.add(temp);
@@ -220,7 +220,7 @@ public class StartStateAttributeTableModel extends AbstractTableModel {
         // Initialize attribute key variable:
         temp = new Vector<Object>();
         for (int i = 0; i < attributes.size(); i++) {
-          temp.add(new Boolean(attributes.elementAt(i).isKey()));
+          temp.add(attributes.elementAt(i).isKey());
         }
         if (data.size() < 8) { // first-time initialization
           data.add(temp);
@@ -231,8 +231,7 @@ public class StartStateAttributeTableModel extends AbstractTableModel {
         // Initialize attribute visible at end variable:
         temp = new Vector<Object>();
         for (int i = 0; i < attributes.size(); i++) {
-          temp.add(new Boolean(
-          		attributes.elementAt(i).isVisibleOnCompletion()));
+          temp.add(attributes.elementAt(i).isVisibleOnCompletion());
         }
         if (data.size() < 9) { // first-time initialization
           data.add(temp);

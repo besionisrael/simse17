@@ -31,6 +31,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 import javax.swing.JOptionPane;
 
@@ -145,6 +146,9 @@ public class ExplanatoryToolGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write(NEWLINE);
       writer.write("import java.util.ArrayList;");
+      writer.write(NEWLINE);
+      writer.write("import java.util.List;");
+      
       writer.write(NEWLINE);
       writer.write("import java.util.Vector;");
       writer.write(NEWLINE);
@@ -689,14 +693,15 @@ public class ExplanatoryToolGenerator implements CodeGeneratorConstants {
           .write("String keyAttVal = selectedObj.substring(objType.length() + objTypeType.length() + 2);");
       writer.write(NEWLINE);
       writer.write(NEWLINE);
+      
       writer
-          .write("Object[] selectedAtts = attributeList.getSelectedValues();");
+          .write("List<Object> selectedAtts = attributeList.getSelectedValuesList();");
       writer.write(NEWLINE);
-      writer.write("String[] attributes = new String[selectedAtts.length];");
+      writer.write("String[] attributes = new String[selectedAtts.size()];");
       writer.write(NEWLINE);
-      writer.write("for (int i = 0; i < selectedAtts.length; i++) {");
+      writer.write("for (int i = 0; i < selectedAtts.size(); i++) {");
       writer.write(NEWLINE);
-      writer.write("attributes[i] = new String((String)selectedAtts[i]);");
+      writer.write("attributes[i] = String.valueOf(selectedAtts.get(i));");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);
@@ -723,13 +728,13 @@ public class ExplanatoryToolGenerator implements CodeGeneratorConstants {
           .write("else if (source == generateActGraphButton) { // generateActGraphButton has been pressed");
       writer.write(NEWLINE);
       writer
-          .write("Object[] selectedActions = actionList.getSelectedValues();");
+          .write("List<Object> selectedActions = actionList.getSelectedValuesList();");
       writer.write(NEWLINE);
-      writer.write("String[] actions = new String[selectedActions.length];");
+      writer.write("String[] actions = new String[selectedActions.size()];");
       writer.write(NEWLINE);
-      writer.write("for (int i = 0; i < selectedActions.length; i++) {");
+      writer.write("for (int i = 0; i < selectedActions.size(); i++) {");
       writer.write(NEWLINE);
-      writer.write("actions[i] = new String((String) selectedActions[i]);");
+      writer.write("actions[i] = String.valueOf(selectedActions.get(i));");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);
@@ -773,14 +778,20 @@ public class ExplanatoryToolGenerator implements CodeGeneratorConstants {
           .write("String keyAttVal = selectedObj.substring(objType.length() + objTypeType.length() + 2);");
       writer.write(NEWLINE);
       writer.write(NEWLINE);
+      
+
+// Convert the List to an array of Strings
+
+    
+
       writer
-          .write("Object[] selectedAtts = attributeList.getSelectedValues();");
+          .write("List<Object> selectedAtts = attributeList.getSelectedValuesList();");
       writer.write(NEWLINE);
-      writer.write("String[] attributes = new String[selectedAtts.length];");
+      writer.write("String[] attributes = new String[selectedAtts.size()];");
       writer.write(NEWLINE);
-      writer.write("for (int i = 0; i < selectedAtts.length; i++) {");
+      writer.write("for (int i = 0; i < selectedAtts.size(); i++) {");
       writer.write(NEWLINE);
-      writer.write("attributes[i] = new String((String) selectedAtts[i]);");
+      writer.write("attributes[i] = String.valueOf(selectedAtts.get(i));");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);
@@ -791,14 +802,18 @@ public class ExplanatoryToolGenerator implements CodeGeneratorConstants {
           .write("ObjectGraph objGraph = new ObjectGraph(title, log, objTypeType, objType, keyAttVal, attributes, false, branch);");
       writer.write(NEWLINE);
       writer.write(NEWLINE);
+      
+
+// Convert the List to an array of Strings
+
       writer
-          .write("Object[] selectedActions = actionList.getSelectedValues();");
+          .write("List<Object> selectedActions = actionList.getSelectedValuesList();");
       writer.write(NEWLINE);
-      writer.write("String[] actions = new String[selectedActions.length];");
+      writer.write("String[] actions = new String[selectedActions.size()];");
       writer.write(NEWLINE);
-      writer.write("for (int i = 0; i < selectedActions.length; i++) {");
+      writer.write("for (int i = 0; i < selectedActions.size(); i++) {");
       writer.write(NEWLINE);
-      writer.write("actions[i] = new String((String) selectedActions[i]);");
+      writer.write("actions[i] = String.valueOf(selectedAtts.get(i));");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);

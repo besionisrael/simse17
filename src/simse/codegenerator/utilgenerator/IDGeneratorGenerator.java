@@ -53,7 +53,7 @@ public class IDGeneratorGenerator implements CodeGeneratorConstants {
       writer.write("public static int getNextID() {");
       writer.write(NEWLINE);
       writer
-          .write("Integer int1 = new Integer(Math.abs(ranNumGen.nextInt()));");
+          .write("Integer int1 = Math.abs(ranNumGen.nextInt());");
       writer.write(NEWLINE);
       writer.write("if(usedIDs.contains(int1)) {");
       writer.write(NEWLINE);
@@ -65,7 +65,7 @@ public class IDGeneratorGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("usedIDs.add(int1);");
       writer.write(NEWLINE);
-      writer.write("return int1.intValue();");
+      writer.write("return int1;");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);

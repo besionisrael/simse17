@@ -239,7 +239,7 @@ public class AttributeStartingValueForm extends JDialog implements
     	// get value:
       String value = (String) (booleanStartValList.getSelectedItem()); 
       if (value.equals("True")) {
-        Boolean newVal = new Boolean(true);
+        Boolean newVal = true;
         if (keyValueIsUnique(newVal)) { // no other object of the same object 
         																// type has the same key attribute value
           // add instantiated attribute:
@@ -254,7 +254,7 @@ public class AttributeStartingValueForm extends JDialog implements
           showNonUniqueKeyValueWarning();
         }
       } else { // false
-        Boolean newVal = new Boolean(false);
+        Boolean newVal = false;
         if (keyValueIsUnique(newVal)) { // no other object of the same object 
         																// type has the same key attribute value
           // add instantiated attribute:
@@ -271,7 +271,7 @@ public class AttributeStartingValueForm extends JDialog implements
       }
     } else if (attribute.getAttribute().getType() == AttributeTypes.STRING) { 
     	// string attribute
-      String newVal = new String(startValTextField.getText());
+      String newVal = startValTextField.getText();
       if (keyValueIsUnique(newVal)) { // no other object of the same object type
                                     	// has the same key attribute value
         // add instantiated attribute:
@@ -289,7 +289,7 @@ public class AttributeStartingValueForm extends JDialog implements
     	// double attribute
       String value = startValTextField.getText();
       try {
-        Double newVal = new Double(Double.parseDouble(value));
+        Double newVal = Double.valueOf(value);
         if (keyValueIsUnique(newVal)) { // no other object of the same object 
         																// type has the same key attribute value
           // add instantiated attribute:
@@ -310,7 +310,7 @@ public class AttributeStartingValueForm extends JDialog implements
     	// integer attribute
       String value = startValTextField.getText();
       try {
-        Integer newVal = new Integer(Integer.parseInt(value));
+        Integer newVal = Integer.valueOf(value);
         if (keyValueIsUnique(newVal)) { // no other object of the same object 
         																// type has the same key attribute value
           // add instantiated attribute:
@@ -360,9 +360,9 @@ public class AttributeStartingValueForm extends JDialog implements
       String value = (String) (booleanStartValList.getSelectedItem()); 
       Boolean newVal;
       if (value.equals("True")) {
-        newVal = new Boolean(true);
+        newVal = true;
       } else { // false
-        newVal = new Boolean(false);
+        newVal = false;
       }
       if ((attribute.getAttribute().isKey() && (keyValueIsUnique(newVal))) || 
       		(attribute.getAttribute().isKey() == false)) { // if the attribute is 
@@ -378,7 +378,7 @@ public class AttributeStartingValueForm extends JDialog implements
       }
     } else if (attribute.getAttribute().getType() == AttributeTypes.STRING) { 
     	// string attribute
-      String newVal = new String(startValTextField.getText());
+      String newVal = startValTextField.getText();
       if ((attribute.getAttribute().isKey() && (keyValueIsUnique(newVal))) || 
       		!attribute.getAttribute().isKey()) { // if the attribute is key it has
       																				 // a unique value
@@ -394,7 +394,7 @@ public class AttributeStartingValueForm extends JDialog implements
     	// double attribute
       String value = startValTextField.getText();
       try {
-        Double newVal = new Double(Double.parseDouble(value));
+        Double newVal = Double.valueOf(value);
         if ((attribute.getAttribute().isKey() && (keyValueIsUnique(newVal))) || 
         		!attribute.getAttribute().isKey()) { // if the attribute is key it 
         																				 // has a unique value
@@ -413,7 +413,7 @@ public class AttributeStartingValueForm extends JDialog implements
     	// integer attribute
       String value = startValTextField.getText();
       try {
-        Integer newVal = new Integer(Integer.parseInt(value));
+        Integer newVal = Integer.valueOf(value);
         if ((attribute.getAttribute().isKey() && (keyValueIsUnique(newVal))) || 
         		!attribute.getAttribute().isKey()) { // if the attribute is key it 
         																				 // has a unique value

@@ -104,8 +104,8 @@ public class ActionFileManipulator {
                 reader.mark(10);
                 currentLine = reader.readLine();
                 if (currentLine.equals("true") || currentLine.equals("false")) {
-                  newAct.setJoiningAllowed(Boolean.valueOf(
-                      currentLine).booleanValue());
+                  newAct.setJoiningAllowed(Boolean.parseBoolean(
+                          currentLine));
                 } else {
                   reader.reset();
                 }
@@ -177,12 +177,12 @@ public class ActionFileManipulator {
                         if ((quantity.equals(
                         		ModelFileManipulator.EMPTY_VALUE)) == false) {
                         	// quantity has a value
-                          quants[0] = new Integer(Integer.parseInt(quantity));
+                          quants[0] = Integer.valueOf(quantity);
                         }
                         if ((maxVal.equals(
                         		ModelFileManipulator.EMPTY_VALUE)) == false) {
                         	// max val has a value
-                          quants[1] = new Integer(Integer.parseInt(maxVal));
+                          quants[1] = Integer.valueOf(maxVal);
                         }
                         newPart.getQuantity().setQuantity(quants); // set
                                                                    // quantity
@@ -285,8 +285,7 @@ public class ActionFileManipulator {
                       if (currentLineTrig.startsWith("<") == false) { 
                       	// new format 5/13/04 that includes game-ending
                       	// triggers/destroyers
-                        newTrig.setGameEndingTrigger((new Boolean(
-                            currentLineTrig)).booleanValue());
+                        newTrig.setGameEndingTrigger((Boolean.parseBoolean(currentLineTrig)));
                       } else if (currentLineTrig.equals(
                       		ModelFileManipulator.END_TRIGGER_TAG)) { // end of 
                       																						 // trigger
@@ -394,14 +393,10 @@ public class ActionFileManipulator {
                                         if (att.getType() == 
                                         	AttributeTypes.BOOLEAN) { // boolean
                                                                     // attribute
-                                          if (value.equals((new Boolean(true))
-                                              .toString())) {
-                                            newAttConst.setValue(new Boolean(
-                                                true));
-                                          } else if (value.equals((new Boolean(
-                                              false)).toString())) {
-                                            newAttConst.setValue(new Boolean(
-                                                false));
+                                          if (value.equals(true)) {
+                                            newAttConst.setValue(true);
+                                          } else if (value.equals(false)) {
+                                            newAttConst.setValue(false);
                                           } else { // a non-boolean value
                                             warnings
                                                 .add(SimSEObjectTypeTypes
@@ -431,13 +426,13 @@ public class ActionFileManipulator {
                                                                     // attribute
                                           try {
                                             boolean valid = true;
-                                            Integer intVal = new Integer(value);
+                                            Integer intVal = Integer.valueOf(value);
                                             NumericalAttribute numAtt =
                                             	(NumericalAttribute)att;
                                             if (numAtt.isMinBoundless() == 
                                             	false) { // has a minimum 
                                             					 // constraining value
-                                              if (intVal.intValue() < 
+                                              if (intVal < 
                                               		numAtt.getMinValue().
                                               		intValue()) { // outside of 
                                               									// range
@@ -472,7 +467,7 @@ public class ActionFileManipulator {
                                             if (numAtt.isMaxBoundless() == 
                                             	false) { // has a maximum 
                                             					 // constraining value
-                                              if (intVal.intValue() > 
+                                              if (intVal > 
                                               numAtt.getMaxValue().intValue()) {
                                               // outside of range
                                                 warnings
@@ -504,8 +499,7 @@ public class ActionFileManipulator {
                                               }
                                             }
                                             if (valid) {
-                                              newAttConst.setValue(new Integer(
-                                                  value));
+                                              newAttConst.setValue(Integer.valueOf(value));
                                             }
                                           } catch (NumberFormatException e) {
                                             warnings
@@ -536,13 +530,13 @@ public class ActionFileManipulator {
                                           try {
                                             boolean valid = true;
                                             Double doubleVal = 
-                                            	new Double(value);
+                                            	Double.valueOf(value);
                                             NumericalAttribute numAtt =
                                             	(NumericalAttribute)att;
                                             if (numAtt.isMinBoundless() == 
                                             	false) { // has a minimum 
                                             				   // constraining value
-                                              if (doubleVal.doubleValue() < 
+                                              if (doubleVal < 
                                               		numAtt.getMinValue().
                                               		doubleValue()) { // outside of
                                               										 // range
@@ -578,7 +572,7 @@ public class ActionFileManipulator {
                                             if (numAtt.isMaxBoundless() == 
                                             	false) { // has a maximum 
                                             					 // constraining value
-                                              if (doubleVal.doubleValue() > 
+                                              if (doubleVal > 
                                               numAtt.getMaxValue().
                                               doubleValue()) { // outside of 
                                               								 // range
@@ -613,8 +607,7 @@ public class ActionFileManipulator {
                                               }
                                             }
                                             if (valid) {
-                                              newAttConst.setValue(new Double(
-                                                  value));
+                                              newAttConst.setValue(Double.valueOf(value));
                                             }
                                           } catch (NumberFormatException e) {
                                             warnings
@@ -650,8 +643,7 @@ public class ActionFileManipulator {
                                       	// new format 5/13/04 that includes
                                       	// scoring attributes
                                         newAttConst
-                                            .setScoringAttribute((new Boolean(
-                                                newLn)).booleanValue());
+                                            .setScoringAttribute((Boolean.parseBoolean(newLn)));
                                       }
                                       // else read END_ATTRIBUTE_CONSTRAINT_TAG
                                       // in
@@ -740,8 +732,7 @@ public class ActionFileManipulator {
                       if (currentLineDest.startsWith("<") == false) { 
                       	// new format 5/13/04 that includes game-ending
                         // triggers/destroyers
-                        newDest.setGameEndingDestroyer((new Boolean(
-                            currentLineDest)).booleanValue());
+                        newDest.setGameEndingDestroyer((Boolean.parseBoolean(currentLineDest)));
                       } else if (currentLineDest.equals(
                       		ModelFileManipulator.END_DESTROYER_TAG)) { 
                       	// end of destroyer
@@ -841,14 +832,10 @@ public class ActionFileManipulator {
                                         if (att.getType() == 
                                         	AttributeTypes.BOOLEAN) { // boolean
                                                                     // attribute
-                                          if (value.equals((new Boolean(true))
-                                              .toString())) {
-                                            newAttConst.setValue(new Boolean(
-                                                true));
-                                          } else if (value.equals((new Boolean(
-                                              false)).toString())) {
-                                            newAttConst.setValue(new Boolean(
-                                                false));
+                                          if (value.equals(true)) {
+                                            newAttConst.setValue(true);
+                                          } else if (value.equals(false)) {
+                                            newAttConst.setValue(false);
                                           } else { // a non-boolean value
                                             warnings
                                                 .add(SimSEObjectTypeTypes
@@ -877,13 +864,13 @@ public class ActionFileManipulator {
                                                                     // attribute
                                           try {
                                             boolean valid = true;
-                                            Integer intVal = new Integer(value);
+                                            Integer intVal = Integer.valueOf(value);
                                             NumericalAttribute numAtt = 
                                             	(NumericalAttribute)att;
                                             if (numAtt.isMinBoundless() == 
                                             	false) { // has a minimum 
                                             				 	 // constraining value
-                                              if (intVal.intValue() < numAtt
+                                              if (intVal < numAtt
                                                   .getMinValue().intValue()) {
                                               // outside of range
                                                 warnings
@@ -918,7 +905,7 @@ public class ActionFileManipulator {
                                             if (numAtt.isMaxBoundless() == 
                                             	false) {
                                             // has a maximum constraining value
-                                              if (intVal.intValue() > numAtt
+                                              if (intVal > numAtt
                                                   .getMaxValue().intValue()) {
                                               // outside of range
                                                 warnings
@@ -951,8 +938,7 @@ public class ActionFileManipulator {
                                               }
                                             }
                                             if (valid) {
-                                              newAttConst.setValue(new Integer(
-                                                  value));
+                                              newAttConst.setValue(Integer.valueOf(value));
                                             }
                                           } catch (NumberFormatException e) {
                                             warnings
@@ -983,13 +969,13 @@ public class ActionFileManipulator {
                                           try {
                                             boolean valid = true;
                                             Double doubleVal = 
-                                            	new Double(value);
+                                            	Double.valueOf(value);
                                             NumericalAttribute numAtt = 
                                             	(NumericalAttribute)att;
                                             if (numAtt.isMinBoundless() == 
                                             	false) {
                                             // has a minimum constraining value
-                                              if (doubleVal.doubleValue() < 
+                                              if (doubleVal < 
                                               		numAtt.getMinValue().
                                               		doubleValue()) { // outside of
                                               										 // range
@@ -1026,7 +1012,7 @@ public class ActionFileManipulator {
                                             if (numAtt.isMaxBoundless() == 
                                             	false) { // has a maximum 
                                             			   	 // constraining value
-                                              if (doubleVal.doubleValue() > 
+                                              if (doubleVal > 
                                               numAtt.getMaxValue().
                                               doubleValue()) { // outside of 
                                               								 // range
@@ -1060,8 +1046,7 @@ public class ActionFileManipulator {
                                               }
                                             }
                                             if (valid) {
-                                              newAttConst.setValue(new Double(
-                                                  value));
+                                              newAttConst.setValue(Double.valueOf(value));
                                             }
                                           } catch (NumberFormatException e) {
                                             warnings
@@ -1097,8 +1082,7 @@ public class ActionFileManipulator {
                                       	// new format 5/13/04 that includes
                                       	// scoring attributes
                                         newAttConst
-                                            .setScoringAttribute((new Boolean(
-                                                newLn)).booleanValue());
+                                            .setScoringAttribute((Boolean.parseBoolean(newLn)));
                                       }
                                       // else read END_ATTRIBUTE_CONSTRAINT_TAG
                                       // in

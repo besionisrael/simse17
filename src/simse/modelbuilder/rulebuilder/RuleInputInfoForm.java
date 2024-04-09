@@ -225,7 +225,7 @@ public class RuleInputInfoForm extends JDialog implements ActionListener {
       try {
         int intVal = Integer.parseInt(condition);
         // set condition value:
-        inputInFocus.getCondition().setValue(new Integer(intVal)); 
+        inputInFocus.getCondition().setValue(intVal); 
       } catch (NumberFormatException e) {
       	// NOTE: this exception should never be thrown since validateInput()
       	// should always be called before this function to ensure that the input
@@ -239,7 +239,7 @@ public class RuleInputInfoForm extends JDialog implements ActionListener {
       try {
         double doubleVal = Double.parseDouble(condition);
         // set condition value:
-        inputInFocus.getCondition().setValue(new Double(doubleVal)); 
+        inputInFocus.getCondition().setValue(doubleVal); 
       } catch (NumberFormatException e) {
       	
         System.out.println(e.getMessage()); 

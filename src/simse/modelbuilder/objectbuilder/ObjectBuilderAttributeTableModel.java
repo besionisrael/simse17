@@ -107,7 +107,7 @@ public class ObjectBuilderAttributeTableModel extends AbstractTableModel {
       temp = new Vector<Object>();
       for (int i = 0; i < attributes.size(); i++) {
         temp
-            .add(new Boolean(attributes.elementAt(i).isVisible()));
+            .add(attributes.elementAt(i).isVisible());
       }
       if (data.size() < 3) { // first-time initialization
         data.add(temp);
@@ -162,7 +162,7 @@ public class ObjectBuilderAttributeTableModel extends AbstractTableModel {
       // Initialize attribute key variable:
       temp = new Vector<Object>();
       for (int i = 0; i < attributes.size(); i++) {
-        temp.add(new Boolean(attributes.elementAt(i).isKey()));
+        temp.add(attributes.elementAt(i).isKey());
       }
       if (data.size() < 6) { // first-time initialization
         data.add(temp);
@@ -173,7 +173,7 @@ public class ObjectBuilderAttributeTableModel extends AbstractTableModel {
       // Initialize attribute visible at game end variable:
       temp = new Vector<Object>();
       for (int i = 0; i < attributes.size(); i++) {
-        temp.add(new Boolean(attributes.elementAt(i).isVisibleOnCompletion()));
+        temp.add(attributes.elementAt(i).isVisibleOnCompletion());
       }
       if (data.size() < 7) { // first-time initialization
         data.add(temp);

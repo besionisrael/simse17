@@ -375,9 +375,8 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
       if (objectInFocus.getNumAttributes() > 1) { // this is not the only
                                                 	// attribute
         messages
-            .add(new String(
-                "You must make a different attribute the key in order to " +
-                "remove this one as the key."));
+            .add(("You must make a different attribute the key in order to " +
+                    "remove this one as the key."));
       } else { // this is the only attribute
         messages
             .add(new String(
@@ -424,7 +423,7 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
       if ((minValInput != null) && (minValInput.length() > 0)) { // field is not
                                                                	 // blank
         try {
-          Double.parseDouble(minValInput); // parse the string into a double
+          Double.valueOf(minValInput); // parse the string into a double
         } catch (NumberFormatException e) {
           messages
               .add(new String("Minimum value must be a valid double number"));
@@ -435,7 +434,7 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
       if ((maxValInput != null) && (maxValInput.length() > 0)) { // field is not
                                                                	 // blank
         try {
-          Double.parseDouble(maxValInput); // parse the string into a double
+          Double.valueOf(maxValInput); // parse the string into a double
         } catch (NumberFormatException e) {
           messages
               .add(new String("Maximum value must be a valid double number"));
@@ -486,7 +485,7 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
       if ((minValInput != null) && (minValInput.length() > 0)) { // field is not
                                                                	 // blank
         try {
-          Integer.parseInt(minValInput); // parse the string into an int
+          Integer.valueOf(minValInput); // parse the string into an int
         } catch (NumberFormatException e) {
           messages.add(new String("Minimum value must be a valid integer"));
         }
@@ -495,7 +494,7 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
       if ((maxValInput != null) && (maxValInput.length() > 0)) { // field is not
                                                                	 // blank
         try {
-          Integer.parseInt(maxValInput); // parse the string into an int
+          Integer.valueOf(maxValInput); // parse the string into an int
         } catch (NumberFormatException e) {
           messages.add(new String("Maximum value must be a valid integer"));
         }
@@ -764,16 +763,16 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
           	// neither min val nor max val field is blank
             double minVal = Double.parseDouble(minValInput);
             double maxVal = Double.parseDouble(maxValInput);
-            min = new Double(minVal);
-            max = new Double(maxVal);
+            min = minVal;
+            max = maxVal;
           } else if ((minValInput != null) && (minValInput.length() > 0)) { 
           	// only max val field is blank
             double minVal = Double.parseDouble(minValInput);
-            min = new Double(minVal);
+            min = minVal;
           } else if ((maxValInput != null) && (maxValInput.length() > 0)) { 
           	// only min val field is blank
             double maxVal = Double.parseDouble(maxValInput);
-            max = new Double(maxVal);
+            max = maxVal;
           }
 
           // min/max num digits:
@@ -785,21 +784,21 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
                 .getText(), selectedType, visible, key, visibleAtEnd, min, max,
-                (new Integer(minVal)), (new Integer(maxVal))));
+                (Integer.valueOf(minVal)), (Integer.valueOf(maxVal))));
           } else if ((minDigitsInput != null) && 
           		(minDigitsInput.length() > 0)) { // only max field is blank
             int minVal = Integer.parseInt(minDigitsInput);
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
                 .getText(), selectedType, visible, key, visibleAtEnd, min, max,
-                (new Integer(minVal)), null));
+                (Integer.valueOf(minVal)), null));
           } else if ((maxDigitsInput != null) && 
           		(maxDigitsInput.length() > 0)) { // only min field is blank
             int maxVal = Integer.parseInt(maxDigitsInput);
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
                 .getText(), selectedType, visible, key, visibleAtEnd, min, max,
-                null, (new Integer(maxVal))));
+                null, (Integer.valueOf(maxVal))));
           } else { // both min and max val field are blank
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
@@ -819,21 +818,21 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
                 .getText(), selectedType, visible, key, visibleAtEnd,
-                (new Integer(minVal)), (new Integer(maxVal)), null, null));
+                (Integer.valueOf(minVal)), (Integer.valueOf(maxVal)), null, null));
           } else if ((minValInput != null) && (minValInput.length() > 0)) { 
           	// only max val field is blank
             int minVal = Integer.parseInt(minValInput);
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
                 .getText(), selectedType, visible, key, visibleAtEnd,
-                (new Integer(minVal)), null, null, null));
+                (Integer.valueOf(minVal)), null, null, null));
           } else if ((maxValInput != null) && (maxValInput.length() > 0)) { 
           	// only min val field is blank
             int maxVal = Integer.parseInt(maxValInput);
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
                 .getText(), selectedType, visible, key, visibleAtEnd, null,
-                (new Integer(maxVal)), null, null));
+                (Integer.valueOf(maxVal)), null, null));
           } else { // both min and max val field are blank
             // Add new attribute to object in focus:
             objectInFocus.addAttribute(new NumericalAttribute(nameTextField
@@ -922,22 +921,18 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
               && (maxValInput != null) && (maxValInput.length() > 0)) { 
           	// neither min val nor max val field is blank
             // Set min and max vals to new vals:
-          	numAttribute.setMinValue(
-          			new Double(Double.parseDouble(minValInput)));
-          	numAttribute.setMaxValue(
-          			new Double(Double.parseDouble(maxValInput)));
+          	numAttribute.setMinValue(Double.valueOf(minValInput));
+          	numAttribute.setMaxValue(Double.valueOf(maxValInput));
           } else if ((minValInput != null) && (minValInput.length() > 0)) { 
           	// only max val field is blank
             // Set min val to new val:
-          	numAttribute.setMinValue(
-          			new Double(Double.parseDouble(minValInput)));
+          	numAttribute.setMinValue(Double.valueOf(minValInput));
             // Set max val to null:
           	numAttribute.setMaxBoundless();
           } else if ((maxValInput != null) && (maxValInput.length() > 0)) { 
           	// only min val field is blank
             // Set max val to new val:
-          	numAttribute.setMaxValue(
-          			new Double(Double.parseDouble(maxValInput)));
+          	numAttribute.setMaxValue(Double.valueOf(maxValInput));
             // Set min val to null:
           	numAttribute.setMinBoundless();
           } else { // both min and max val fields are blank
@@ -951,22 +946,18 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
           		(maxDigitsInput != null) && (maxDigitsInput.length() > 0)) { 
           	// neither min nor max field is blank
             // Set min and max to new vals:
-          	numAttribute.setMinNumFractionDigits(
-          			new Integer(Integer.parseInt(minDigitsInput)));
-          	numAttribute.setMaxNumFractionDigits(
-          			new Integer(Integer.parseInt(maxDigitsInput)));
+          	numAttribute.setMinNumFractionDigits(Integer.valueOf(minDigitsInput));
+          	numAttribute.setMaxNumFractionDigits(Integer.valueOf(maxDigitsInput));
           } else if ((minDigitsInput != null) && 
           		(minDigitsInput.length() > 0)) { // only max field is blank
             // Set min to new val:
-          	numAttribute.setMinNumFractionDigits(
-          			new Integer(Integer.parseInt(minDigitsInput)));
+          	numAttribute.setMinNumFractionDigits(Integer.valueOf(minDigitsInput));
             // Set max to null:
           	numAttribute.setMaxNumFractionDigits(null);
           } else if ((maxDigitsInput != null) && 
           		(maxDigitsInput.length() > 0)) { // only min field is blank
             // Set max to new val:
-          	numAttribute.setMaxNumFractionDigits(
-          			new Integer(Integer.parseInt(maxDigitsInput)));
+          	numAttribute.setMaxNumFractionDigits(Integer.valueOf(maxDigitsInput));
             // Set min to null:
           	numAttribute.setMinNumFractionDigits(null);
           } else { // both min and max fields are blank
@@ -988,22 +979,18 @@ public class AttributeInfoForm extends JDialog implements ActionListener {
                                                                      // field is
                                                                      // blank
             // Set min and max vals to new vals:
-          	numAttribute.setMinValue(
-          			new Integer(Integer.parseInt(minValInput)));
-          	numAttribute.setMaxValue(
-          			new Integer(Integer.parseInt(maxValInput)));
+          	numAttribute.setMinValue(Integer.valueOf(minValInput));
+          	numAttribute.setMaxValue(Integer.valueOf(maxValInput));
           } else if ((minValInput != null) && (minValInput.length() > 0)) { 
           	// only max val field is blank
             // Set min val to new val:
-          	numAttribute.setMinValue(
-          			new Integer(Integer.parseInt(minValInput)));
+          	numAttribute.setMinValue(Integer.valueOf(minValInput));
             // Set max val to null:
           	numAttribute.setMaxBoundless();
           } else if ((maxValInput != null) && (maxValInput.length() > 0)) { 
           	// only min val field is blank
             // Set max val to new val:
-          	numAttribute.setMaxValue(
-          			new Integer(Integer.parseInt(maxValInput)));
+          	numAttribute.setMaxValue(Integer.valueOf(maxValInput));
             // Set min val to null:
           	numAttribute.setMinBoundless();
           } else { // both min and max val field are blank

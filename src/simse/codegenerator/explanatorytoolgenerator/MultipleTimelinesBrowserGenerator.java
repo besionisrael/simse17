@@ -718,7 +718,7 @@ CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("if (b.getStartTick() == intX) {");
       writer.write(NEWLINE);
-      writer.write("branchIndices.add(new Integer(i));");
+      writer.write("branchIndices.add(i);");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);
@@ -729,7 +729,7 @@ CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("for (Integer i : branchIndices) {");
       writer.write(NEWLINE);
-      writer.write("Branch root = SimSE.getBranches().get(i.intValue()).getRoot();");
+      writer.write("Branch root = SimSE.getBranches().get(i).getRoot();");
       writer.write(NEWLINE);
       writer.write("int rootIndex = -1;");
       writer.write(NEWLINE);
@@ -758,7 +758,7 @@ CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("if (intY >= rootGameYVal && intY <= branchYVal) {");
       writer.write(NEWLINE);
-      writer.write("return SimSE.getBranches().get(i.intValue());");
+      writer.write("return SimSE.getBranches().get(i);");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);

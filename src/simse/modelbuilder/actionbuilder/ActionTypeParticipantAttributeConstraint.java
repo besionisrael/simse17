@@ -37,13 +37,14 @@ public class ActionTypeParticipantAttributeConstraint implements Cloneable {
       cl.guard = guard;
       cl.score = score;
       if (value instanceof Integer) {
-        cl.value = new Integer(((Integer) value).intValue());
+          //cl.value = new Integer(((Integer) value).intValue());
+        cl.value = ((Integer) value);
       } else if (value instanceof Double) {
-        cl.value = new Double(((Double) value).doubleValue());
+        cl.value = ((Double) value);
       } else if (value instanceof String) {
         cl.value = value;
       } else if (value instanceof Boolean) {
-        cl.value = new Boolean(((Boolean) value).booleanValue());
+        cl.value = ((Boolean) value);
       }
       return cl;
     } catch (CloneNotSupportedException c) {

@@ -383,7 +383,7 @@ public class GraphicsBuilderGUI extends JPanel implements ActionListener {
 					if (objType.hasKey()) { // objType has a key attribute specified
 						if (objType.getKey().getType() == AttributeTypes.INTEGER) {
 							try {
-								Integer val = new Integer(keyAttVal);
+								Integer val = Integer.valueOf(keyAttVal);
 								// try to get the object from the CreatedObjects:
 								objInFocus = objects.getObject(metaType, ssObjType, val);
 								if (objInFocus == null) { // not a start state object
@@ -395,7 +395,7 @@ public class GraphicsBuilderGUI extends JPanel implements ActionListener {
 							}
 						} else if (objType.getKey().getType() == AttributeTypes.DOUBLE) {
 							try {
-								Double val = new Double(keyAttVal);
+								Double val = Double.valueOf(keyAttVal);
 								// try to get the object from the CreatedObjects:
 								objInFocus = objects.getObject(metaType, ssObjType, val);
 								if (objInFocus == null) { // not a start state object
@@ -407,12 +407,10 @@ public class GraphicsBuilderGUI extends JPanel implements ActionListener {
 							}
 						} else if (objType.getKey().getType() == AttributeTypes.BOOLEAN) {
 							// try to get the object from the CreatedObjects:
-							objInFocus = objects.getObject(metaType, ssObjType, new Boolean(
-									keyAttVal));
+							objInFocus = objects.getObject(metaType, ssObjType, Boolean.valueOf(keyAttVal));
 							if (objInFocus == null) { // not a start state object
 								// get it from the rules:
-								objInFocus = getObjectFromRules(metaType, ssObjType,
-										new Boolean(keyAttVal));
+								objInFocus = getObjectFromRules(metaType, ssObjType, Boolean.valueOf(keyAttVal));
 							}
 						} else { // string
 							// try to get the object from the CreatedObjects:

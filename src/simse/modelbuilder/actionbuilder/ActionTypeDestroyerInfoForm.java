@@ -450,8 +450,8 @@ public class ActionTypeDestroyerInfoForm extends JDialog implements
                                                                      // reflect
                                                                      // this
       frequencyTextField
-          .setText((new Double(((RandomActionTypeDestroyer) (destroyer))
-              .getFrequency())).toString()); // set
+          .setText((Double.valueOf(((RandomActionTypeDestroyer) (destroyer))
+                  .getFrequency())).toString()); // set
       // frequency text field to reflect actual value
     } else if (destroyer instanceof TimedActionTypeDestroyer) { // destroyer is
                                                               	// timed type
@@ -460,8 +460,7 @@ public class ActionTypeDestroyerInfoForm extends JDialog implements
                                                                     // reflect
                                                                     // this
       // set time text field to reflect actual value:
-      timeTextField.setText((new Integer(
-          ((TimedActionTypeDestroyer) (destroyer)).getTime())).toString()); 
+      timeTextField.setText((Integer.valueOf(((TimedActionTypeDestroyer) (destroyer)).getTime())).toString()); 
     }
   }
 

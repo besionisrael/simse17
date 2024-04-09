@@ -431,7 +431,7 @@ public class AtAGlanceFramesGenerator implements CodeGeneratorConstants {
       writer.write(OPEN_BRACK);
       writer.write(NEWLINE);
       writer
-          .write("int index = hiddenCols.elementAt(i).intValue();");
+          .write("int index = hiddenCols.elementAt(i);");
       writer.write(NEWLINE);
       writer
           .write("JMenuItem tempItem = new JMenuItem(table.getColumnName(index));");
@@ -583,7 +583,7 @@ public class AtAGlanceFramesGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write(OPEN_BRACK);
       writer.write(NEWLINE);
-      writer.write("hiddenCols.add(new Integer(i));");
+      writer.write("hiddenCols.add(i);");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);

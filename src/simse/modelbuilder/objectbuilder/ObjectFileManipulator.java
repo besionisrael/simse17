@@ -96,12 +96,12 @@ public class ObjectFileManipulator {
                       String minValStr = reader.readLine(); 
                       Integer minVal = 
                       	(!minValStr.equals(ModelFileManipulator.BOUNDLESS)) ? 
-                      			new Integer(minValStr) : null;
+                      			Integer.valueOf(minValStr) : null;
                       // get the maximum value:
                       String maxValStr = reader.readLine(); 
                       Integer maxVal = 
                       	(!maxValStr.equals(ModelFileManipulator.BOUNDLESS)) ? 
-                      			new Integer(maxValStr) : null;
+                      			Integer.valueOf(maxValStr) : null;
                       // add attribute to object:
                       newObj.addAttribute(new NumericalAttribute(attName, type,
                           visible, key, visibleAtEnd, minVal, maxVal, null,
@@ -112,22 +112,22 @@ public class ObjectFileManipulator {
                       String minValStr = reader.readLine(); 
                       Double minVal = 
                       	(!minValStr.equals(ModelFileManipulator.BOUNDLESS)) ? 
-                      			new Double(minValStr) : null;
+                      			Double.valueOf(minValStr) : null;
                       // get the maximum value:
                       String maxValStr = reader.readLine(); 
                       Double maxVal = 
                       	(!maxValStr.equals(ModelFileManipulator.BOUNDLESS)) ?
-                      			new Double(maxValStr) : null;
+                      			Double.valueOf(maxValStr) : null;
                       // get the minimum num digits:
                       String minDigStr = reader.readLine(); 
                       Integer minDig = 
                       	(!minDigStr.equals(ModelFileManipulator.BOUNDLESS)) ? 
-                      			new Integer(minDigStr) : null;
+                      			Integer.valueOf(minDigStr) : null;
                       // get the maximum value:
                       String maxDigStr = reader.readLine(); 
                       Integer maxDig = 
                       	(!maxDigStr.equals(ModelFileManipulator.BOUNDLESS)) ?
-                      			new Integer(maxDigStr) : null;
+                      			Integer.valueOf(maxDigStr) : null;
                       // add attribute to object:
                       newObj.addAttribute(new NumericalAttribute(attName, type,
                           visible, key, visibleAtEnd, minVal, maxVal, minDig,

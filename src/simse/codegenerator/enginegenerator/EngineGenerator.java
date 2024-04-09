@@ -50,6 +50,7 @@ public class EngineGenerator implements CodeGeneratorConstants {
       writer.write("package simse.engine;");
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write("import simse.logic.*;");
       writer.write(NEWLINE);

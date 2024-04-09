@@ -498,8 +498,8 @@ public class ActionTypeParticipantInfoForm extends JDialog implements
       newQuantity[0] = null;
     } else { // quantity text field non-empty
       try {
-        newQuantity[0] = new Integer(Integer.parseInt(quantityTextField
-            .getText()));
+        newQuantity[0] = Integer.valueOf(quantityTextField
+                .getText());
       } catch (NumberFormatException e) {
         // Note: this exception should never be thrown because inputValid()
         // should have already been called on this
@@ -511,8 +511,7 @@ public class ActionTypeParticipantInfoForm extends JDialog implements
       newQuantity[1] = null;
     } else { // max val text field non-empty
       try {
-        newQuantity[1] = new Integer(Integer
-            .parseInt(maxValTextField.getText()));
+        newQuantity[1] = Integer.valueOf(maxValTextField.getText());
       } catch (NumberFormatException e) {
         // Note: this exception should never be thrown because inputValid()
         // should have already been called on this

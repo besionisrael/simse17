@@ -25,10 +25,10 @@ public class ActionTypeParticipantQuantity implements Cloneable {
       cl.quantityGuard = quantityGuard;
       Integer[] clonedQuant = new Integer[2];
       if (quantity[0] != null) {
-        clonedQuant[0] = new Integer(quantity[0].intValue());
+        clonedQuant[0] = quantity[0];
       }
       if (quantity[1] != null) {
-        clonedQuant[1] = new Integer(quantity[1].intValue());
+        clonedQuant[1] = quantity[1];
       }
       cl.quantity = clonedQuant;
       return cl;

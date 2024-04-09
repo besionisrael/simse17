@@ -393,8 +393,7 @@ public class ActionTypeTriggerInfoForm extends JDialog implements
     	// set type list to reflect this:
       triggerTypeList.setSelectedItem(ActionTypeTrigger.RANDOM);
       // set frequency text field to reflect actual value:
-      frequencyTextField.setText((new Double(
-          ((RandomActionTypeTrigger) (trigger)).getFrequency())).toString()); 
+      frequencyTextField.setText((Double.valueOf(((RandomActionTypeTrigger) (trigger)).getFrequency())).toString()); 
     }
   }
 

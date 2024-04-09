@@ -81,6 +81,7 @@ public class MenuInputManagerGenerator implements CodeGeneratorConstants {
       writer.write("import simse.gui.*;");
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write("import simse.adts.actions.*;");
       writer.write(NEWLINE);

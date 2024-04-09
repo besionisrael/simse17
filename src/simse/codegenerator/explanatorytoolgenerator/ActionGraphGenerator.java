@@ -218,7 +218,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
         ActionType act = actions.get(i);
         if (act.isVisibleInExplanatoryTool()) {
           writer.write(act.getName().toLowerCase()
-              + "Indices.add(0, new Integer(-1));");
+              + "Indices.add(0, -1);");
           writer.write(NEWLINE);
         }
       }
@@ -400,7 +400,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
       writer
           .write("// if a series has not been created for this action, create one:");
       writer.write(NEWLINE);
-      writer.write("if (!series.containsKey(new Integer(action.getId()))) {");
+      writer.write("if (!series.containsKey(action.getId())) {");
       writer.write(NEWLINE);
       writer.write("XYSeries newSeries = null;");
       writer.write(NEWLINE);
@@ -428,7 +428,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
           writer.write("newSeries = new XYSeries(newSeriesName);");
           writer.write(NEWLINE);
           writer.write(lCaseName + "Indices.add(" + lCaseName
-              + "Index, new Integer(action.getId()));");
+              + "Index, action.getId());");
           writer.write(NEWLINE);
           writer.write(lCaseName + "Index++;");
           writer.write(NEWLINE);
@@ -444,7 +444,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("// add the series to the Hashtable:");
       writer.write(NEWLINE);
-      writer.write("series.put(new Integer(action.getId()), newSeries);");
+      writer.write("series.put(action.getId(), newSeries);");
       writer.write(NEWLINE);
       writer.write(NEWLINE);
       writer.write("// add the index entry to the ArrayList:");
@@ -463,7 +463,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
       writer.write("else {");
       writer.write(NEWLINE);
       writer
-          .write("XYSeries oldSeries = series.get(new Integer(action.getId()));");
+          .write("XYSeries oldSeries = series.get(action.getId());");
       writer.write(NEWLINE);
       writer.write("int index = 0;");
       writer.write(NEWLINE);
@@ -484,7 +484,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
           writer.write("if (action instanceof " + uCaseName + "Action) {");
           writer.write(NEWLINE);
           writer.write("index = " + lCaseName
-              + "Indices.indexOf(new Integer(action.getId()));");
+              + "Indices.indexOf(action.getId());");
           writer.write(NEWLINE);
           writer.write(NEWLINE);
           writer.write("// add the data value to the series:");
@@ -700,7 +700,7 @@ public class ActionGraphGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write("if (xys.getKey().equals(seriesName)) {");
       writer.write(NEWLINE);
-      writer.write("return id.intValue();");
+      writer.write("return id;");
       writer.write(NEWLINE);
       writer.write(CLOSED_BRACK);
       writer.write(NEWLINE);

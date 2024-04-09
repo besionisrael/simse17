@@ -393,9 +393,9 @@ public class ActionTypeParticipantDestroyerConstraintsInfoForm extends JDialog
         String valString = (String) (((JComboBox) (values.elementAt(i)))
             .getSelectedItem());
         if (valString.equals("True")) {
-          attConst.setValue(new Boolean(true));
+          attConst.setValue(true);
         } else if (valString.equals("False")) {
-          attConst.setValue(new Boolean(false));
+          attConst.setValue(false);
         } else if (valString.equals("")) {
           attConst.setValue(null);
         }
@@ -413,7 +413,7 @@ public class ActionTypeParticipantDestroyerConstraintsInfoForm extends JDialog
             }
             else {
 	            int intVal = Integer.parseInt(valString);
-	            attConst.setValue(new Integer(intVal));
+	            attConst.setValue(intVal);
             }
           } catch (NumberFormatException e) {
             //System.out.println(e.getMessage()); // note: validateInput()
@@ -428,7 +428,7 @@ public class ActionTypeParticipantDestroyerConstraintsInfoForm extends JDialog
               attConst.setValue(null);
             } else {
 	            double doubleVal = Double.parseDouble(valString);
-	            attConst.setValue(new Double(doubleVal));
+	            attConst.setValue(doubleVal);
             }
           } catch (NumberFormatException e) {
             //System.out.println(e.getMessage()); // note: validateInput()

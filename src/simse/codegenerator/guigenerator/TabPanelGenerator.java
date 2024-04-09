@@ -58,6 +58,7 @@ public class TabPanelGenerator implements CodeGeneratorConstants {
       writer.write("package simse.gui;");
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write("import simse.state.*;");
       writer.write(NEWLINE);

@@ -341,8 +341,8 @@ public class ActionTypeParticipantTriggerConstraintsInfoForm extends JDialog
                 }
               }
             } catch (NumberFormatException e) {
-              messages.add(new String(tempAtt.getName()
-                  + " attribute value must be a valid integer"));
+              messages.add((tempAtt.getName()
+                      + " attribute value must be a valid integer"));
             }
           }
         }
@@ -391,9 +391,9 @@ public class ActionTypeParticipantTriggerConstraintsInfoForm extends JDialog
         String valString = (String) (((JComboBox) (values.elementAt(i)))
             .getSelectedItem());
         if (valString.equals("True")) {
-          attConst.setValue(new Boolean(true));
+          attConst.setValue(true);
         } else if (valString.equals("False")) {
-          attConst.setValue(new Boolean(false));
+          attConst.setValue(false);
         } else if (valString.equals("")) {
           attConst.setValue(null);
         }
@@ -410,7 +410,7 @@ public class ActionTypeParticipantTriggerConstraintsInfoForm extends JDialog
               attConst.setValue(null);
             } else {
 	            int intVal = Integer.parseInt(valString);
-	            attConst.setValue(new Integer(intVal));
+	            attConst.setValue(intVal);
             }
           } catch (NumberFormatException e) {
             //System.out.println(e.getMessage()); // note: validateInput()
@@ -425,7 +425,7 @@ public class ActionTypeParticipantTriggerConstraintsInfoForm extends JDialog
               attConst.setValue(null);
             } else {
               double doubleVal = Double.parseDouble(valString);
-              attConst.setValue(new Double(doubleVal));
+              attConst.setValue(doubleVal);
             }
           } catch (NumberFormatException e) {
             //System.out.println(e.getMessage()); // note: validateInput()

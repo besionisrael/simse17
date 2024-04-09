@@ -80,6 +80,7 @@ public class RuleExecutorGenerator implements CodeGeneratorConstants {
       writer.write("import simse.gui.*;");
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write("import simse.adts.actions.*;");
       writer.write(NEWLINE);
@@ -557,8 +558,8 @@ public class RuleExecutorGenerator implements CodeGeneratorConstants {
             writer.write(NEWLINE);
             writer.write(OPEN_BRACK);
             writer.write(NEWLINE);
-            writer.write(input.getType() + " temp = new " + input.getType()
-                + "(response);");
+            
+            writer.write(input.getType() + " temp = Double.valueOf" + "(response);");
             writer.write(NEWLINE);
             String tempTypeStr = new String();
             if (input.getType().equals(InputType.INTEGER)) {
@@ -2074,10 +2075,10 @@ public class RuleExecutorGenerator implements CodeGeneratorConstants {
                       }
                       // get min & max vals:
                       try {
-                        Integer minVal = new Integer(token.substring((token
-                            .indexOf(':') + 1), token.indexOf(',')));
-                        Integer maxVal = new Integer(token.substring(token
-                            .indexOf(',') + 1));
+                        Integer minVal = Integer.valueOf(token.substring((token
+                                .indexOf(':') + 1), token.indexOf(',')));
+                        Integer maxVal = Integer.valueOf(token.substring(token
+                                .indexOf(',') + 1));
                         // append to expression:
                         expression.append("((double)((ranNumGen.nextInt("
                             + maxVal + " - " + minVal + " + 1) + " + minVal

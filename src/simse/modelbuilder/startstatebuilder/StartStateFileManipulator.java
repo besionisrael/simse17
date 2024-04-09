@@ -185,8 +185,7 @@ public class StartStateFileManipulator {
                                   		(obj2.getKey().getValue() instanceof 
                                   				Boolean)) {
                                   	boolean boolObj2 = 
-                                  		((Boolean)(obj2.getKey().getValue())).
-                                  		booleanValue();
+                                                ((Boolean)(obj2.getKey().getValue()));
                                     if (boolObj2 == true) {
                                       trueTaken = true;
                                       break;
@@ -201,7 +200,7 @@ public class StartStateFileManipulator {
                                                             	// taken
                               	// set it to false:
                                 newObj.addAttribute(new InstantiatedAttribute(
-                                    attribute, new Boolean(false))); 
+                                    attribute, false)); 
                                 String warning = ("Key attribute value not " +
                                 		"instantiated for start state object: "
                                     + newObj.getSimSEObjectType().getName()
@@ -214,7 +213,7 @@ public class StartStateFileManipulator {
                               				 // or neither is taken
                               	// set it to true:
                                 newObj.addAttribute(new InstantiatedAttribute(
-                                    attribute, new Boolean(true))); 
+                                    attribute, true)); 
                                 String warning = ("Key attribute value not " +
                                 		"instantiated for start state object: "
                                     + newObj.getSimSEObjectType().getName()
@@ -303,7 +302,7 @@ public class StartStateFileManipulator {
                                           && (obj2.getKey().getValue() 
                                           		instanceof Integer)
                                           && (((Integer) (obj2.getKey()
-                                              .getValue())).intValue() == 
+                                                  .getValue())) == 
                                               	ranInt)) {
                                         intTaken = true;
                                       } else {
@@ -342,7 +341,7 @@ public class StartStateFileManipulator {
 
                               // set the value to the random int:
                               newObj.addAttribute(new InstantiatedAttribute(
-                                  attribute, new Integer(ranInt)));
+                                  attribute, ranInt));
                               String warning = ("Key attribute value not " +
                               		"instantiated for start state object: "
                                   + newObj.getSimSEObjectType().getName()
@@ -379,7 +378,7 @@ public class StartStateFileManipulator {
                                           && (obj2.getKey().getValue() 
                                           		instanceof Double)
                                           && (((Double) (obj2.getKey()
-                                              .getValue())).doubleValue() == 
+                                                  .getValue())) == 
                                               	ranDbl)) {
                                         dblTaken = true;
                                         break;
@@ -392,7 +391,7 @@ public class StartStateFileManipulator {
                               }
                               // set the value to the random double:
                               newObj.addAttribute(new InstantiatedAttribute(
-                                  attribute, new Double(ranDbl)));
+                                  attribute, ranDbl));
                               String warning = ("Key attribute value not " +
                               		"instantiated for start state object: "
                                   + newObj.getSimSEObjectType().getName()
@@ -414,12 +413,12 @@ public class StartStateFileManipulator {
                           if (attribute.getType() == AttributeTypes.INTEGER) { 
                           	// integer attribute
                             try {
-                              Integer intVal = new Integer(value);
+                              Integer intVal = Integer.valueOf(value);
                               boolean valid = true;
                               NumericalAttribute numAttribute = 
                               	(NumericalAttribute)attribute;
                               if (!numAttribute.isMinBoundless()) { // has a min
-                                if (intVal.intValue() < 
+                                if (intVal < 
                                 		numAttribute.getMinValue().intValue()) {
                                   valid = false;
                                   if (!attribute.isKey()) { // not key
@@ -436,7 +435,7 @@ public class StartStateFileManipulator {
                                             + numAttribute.getMinValue().
                                             intValue()
                                             + " -- value "
-                                            + intVal.intValue()
+                                            + intVal
                                             + " now not within range -- " +
                                             		"ignoring this attribute " +
                                             		"value in created object of " +
@@ -446,7 +445,7 @@ public class StartStateFileManipulator {
                                 }
                               }
                               if (!numAttribute.isMaxBoundless()) { // has a max
-                                if (intVal.intValue() > 
+                                if (intVal > 
                                 numAttribute.getMaxValue().intValue()) {
                                   valid = false;
                                   if (!attribute.isKey()) { // not key
@@ -463,7 +462,7 @@ public class StartStateFileManipulator {
                                             + numAttribute.getMaxValue().
                                             intValue()
                                             + " -- value "
-                                            + intVal.intValue()
+                                            + intVal
                                             + " now not within range -- " +
                                             		"ignoring this attribute in " +
                                             		"created object of this type");
@@ -502,7 +501,7 @@ public class StartStateFileManipulator {
                                               && (obj2.getKey().getValue() 
                                               		instanceof Integer)
                                               && (((Integer) (obj2.getKey()
-                                                  .getValue())).intValue() == 
+                                                      .getValue())) == 
                                                   	ranInt)) {
                                             intTaken = true;
                                           } else {
@@ -544,7 +543,7 @@ public class StartStateFileManipulator {
                                   // set the value to the random int:
                                   newObj
                                       .addAttribute(new InstantiatedAttribute(
-                                          attribute, new Integer(ranInt)));
+                                          attribute, ranInt));
                                   String warning = ("Key attribute value not" +
                                   		" instantiated for start state object: "
                                       + newObj.getSimSEObjectType().getName()
@@ -598,7 +597,7 @@ public class StartStateFileManipulator {
                                             && (obj2.getKey().getValue() 
                                             		instanceof Integer)
                                             && (((Integer) (obj2.getKey()
-                                                .getValue())).intValue() == 
+                                                    .getValue())) == 
                                                 	ranInt)) {
                                           intTaken = true;
                                         } else {
@@ -639,7 +638,7 @@ public class StartStateFileManipulator {
 
                                 // set the value to the random int:
                                 newObj.addAttribute(new InstantiatedAttribute(
-                                    attribute, new Integer(ranInt)));
+                                    attribute, ranInt));
                                 String warning = ("Key attribute value type " +
                                 		"changed for start state object: "
                                     + newObj.getSimSEObjectType().getName()
@@ -667,12 +666,12 @@ public class StartStateFileManipulator {
                           } else if (attribute.getType() == 
                           	AttributeTypes.DOUBLE) { // double attribute
                             try {
-                              Double doubleVal = new Double(value);
+                              Double doubleVal = Double.valueOf(value);
                               boolean valid = true;
                               NumericalAttribute numAttribute =
                               	(NumericalAttribute)attribute;
                               if (!numAttribute.isMinBoundless()) { // has a min
-                                if (doubleVal.doubleValue() < 
+                                if (doubleVal < 
                                 		numAttribute.getMinValue().doubleValue()) {
                                   valid = false;
                                   if (!attribute.isKey()) { // not key
@@ -689,7 +688,7 @@ public class StartStateFileManipulator {
                                             + numAttribute.getMinValue().
                                             doubleValue()
                                             + " -- value "
-                                            + doubleVal.doubleValue()
+                                            + doubleVal
                                             + " now not within range -- " +
                                             		"ignoring this attribute in " +
                                             		"created object of this type");
@@ -697,7 +696,7 @@ public class StartStateFileManipulator {
                                 }
                               }
                               if (!numAttribute.isMaxBoundless()) { // has a max
-                                if (doubleVal.doubleValue() > 
+                                if (doubleVal > 
                                 numAttribute.getMaxValue().doubleValue()) {
                                   valid = false;
                                   if (!attribute.isKey()) { // not key
@@ -714,7 +713,7 @@ public class StartStateFileManipulator {
                                             + numAttribute
                                                 .getMaxValue().doubleValue()
                                             + " -- value "
-                                            + doubleVal.doubleValue()
+                                            + doubleVal
                                             + " now not within range -- " +
                                             		"ignoring this attribute in " +
                                             		"created object of this type");
@@ -774,7 +773,7 @@ public class StartStateFileManipulator {
                                   // set the value to the random double:
                                   newObj
                                       .addAttribute(new InstantiatedAttribute(
-                                          attribute, new Double(ranDbl)));
+                                          attribute, ranDbl));
                                   String warning = ("Key attribute value not" +
                                   		" instantiated for start state object: "
                                       + newObj.getSimSEObjectType().getName()
@@ -849,7 +848,7 @@ public class StartStateFileManipulator {
                                 }
                                 // set the value to the random double:
                                 newObj.addAttribute(new InstantiatedAttribute(
-                                    attribute, new Double(ranDbl)));
+                                    attribute, Double.valueOf(ranDbl)));
                                 String warning = ("Key attribute value type" +
                                 		" changed for start state object: "
                                     + newObj.getSimSEObjectType().getName()
@@ -883,7 +882,7 @@ public class StartStateFileManipulator {
                           } else if (attribute.getType() == 
                           	AttributeTypes.BOOLEAN) { // boolean attribute
                             newObj.addAttribute(new InstantiatedAttribute(
-                                attribute, new Boolean(value)));
+                                attribute, Boolean.valueOf(value)));
                             // read in the END_INSTANTIATED_ATTRIBUTE tag:
                             reader.readLine(); 
                           }

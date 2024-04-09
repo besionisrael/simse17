@@ -65,6 +65,7 @@ public class AtAGlanceTableModelGenerator implements CodeGeneratorConstants {
       writer.write(NEWLINE);
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write("import simse.state.*;");
       writer.write(NEWLINE);
@@ -256,9 +257,10 @@ public class AtAGlanceTableModelGenerator implements CodeGeneratorConstants {
             		"s.elementAt(i).get" + 
             		CodeGeneratorUtils.getUpperCaseLeading(a.getName()) + "());");
           } else if (a.getType() == AttributeTypes.BOOLEAN) {
-            writer.write("temp.add(new Boolean(" + 
+            writer.write("temp.add(" + 
             		type.getName().toLowerCase() + "s.elementAt(i).get" + 
-            		CodeGeneratorUtils.getUpperCaseLeading(a.getName()) + "()));");
+            		CodeGeneratorUtils.getUpperCaseLeading(a.getName()) + "());");
+            
           } else if (a.getType() == AttributeTypes.INTEGER) {
             writer.write("numFormat.setMinimumFractionDigits(0);");
             writer.write(NEWLINE);
@@ -367,9 +369,9 @@ public class AtAGlanceTableModelGenerator implements CodeGeneratorConstants {
 	          		type.getName().toLowerCase() + "s.elementAt(i).get" + 
 	          		CodeGeneratorUtils.getUpperCaseLeading(a.getName()) + "());");
 	        } else if (a.getType() == AttributeTypes.BOOLEAN) {
-	          writer.write("temp.add(new Boolean(" + 
+	          writer.write("temp.add(" + 
 	          		type.getName().toLowerCase() + "s.elementAt(i).get" + 
-	          		a.getName() + "()));");
+	          		a.getName() + "());");
 	        } else if (a.getType() == AttributeTypes.INTEGER) {
 	          writer.write("numFormat.setMinimumFractionDigits(0);");
 	          writer.write(NEWLINE);

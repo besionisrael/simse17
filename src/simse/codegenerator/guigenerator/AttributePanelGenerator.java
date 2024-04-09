@@ -48,6 +48,7 @@ public class AttributePanelGenerator implements CodeGeneratorConstants {
       writer.write("import simse.state.*;");
       writer.write(NEWLINE);
       writer.write("import simse.adts.objects.*;");
+      
       writer.write(NEWLINE);
       writer.write(NEWLINE);
       writer.write("import java.text.*;");
