@@ -3,8 +3,8 @@ false
 <endAllowHireFire>
 <beginModelOptions>
 false
-C:\Users\Emily\Documents\workspace\res\models\waterfall\icons
-C:\Users\Emily\Documents\workspace\inspectionGame
+D:\Workspace\eclipse-workspace\Games\icons
+D:\Workspace\eclipse-workspace\inspection-17\src
 true
 true
 <endModelOptions>
@@ -1254,7 +1254,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InspectionStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -1395,13 +1395,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Inspecting
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 LookingForBugs
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -1455,7 +1455,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 BeingInspected
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -1497,7 +1497,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InspectionStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -1551,7 +1551,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 BeingUsed
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -1866,13 +1866,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Inspecting
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 LookingForBugs
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -1926,7 +1926,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 BeingInspected
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -1968,7 +1968,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InspectionStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -2494,7 +2494,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 BeingInspected
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6523,11 +6523,23 @@ Generic Project
 <endGraphics>
 <beginMap>
 <beginSOPUsers>
-- Employee - SoftwareEngineer - Emily
+- Employee - SoftwareEngineer - David
 true
 true
-12
-5
+8
+7
+
+- Employee - SoftwareEngineer - Ping
+true
+true
+10
+7
+
+- Employee - SoftwareEngineer - Chris V.
+true
+true
+10
+1
 
 - Employee - SoftwareEngineer - Alex
 true
@@ -6535,10 +6547,28 @@ true
 4
 7
 
+- Employee - SoftwareEngineer - Beverly
+true
+true
+8
+1
+
 - Employee - SoftwareEngineer - Paul
 true
 true
 2
+3
+
+- Employee - SoftwareEngineer - Chris J.
+true
+true
+2
+5
+
+- Employee - SoftwareEngineer - Calvin
+true
+true
+12
 3
 
 - Employee - SoftwareEngineer - Andre
@@ -6547,10 +6577,10 @@ true
 6
 1
 
-- Employee - SoftwareEngineer - Chris J.
+- Employee - SoftwareEngineer - Emily
 true
 true
-2
+12
 5
 
 - Employee - SoftwareEngineer - Anita
@@ -6563,36 +6593,6 @@ true
 true
 true
 4
-1
-
-- Employee - SoftwareEngineer - Calvin
-true
-true
-12
-3
-
-- Employee - SoftwareEngineer - Ping
-true
-true
-10
-7
-
-- Employee - SoftwareEngineer - Beverly
-true
-true
-8
-1
-
-- Employee - SoftwareEngineer - David
-true
-true
-8
-7
-
-- Employee - SoftwareEngineer - Chris V.
-true
-true
-10
 1
 
 <endSOPUsers>
