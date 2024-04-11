@@ -29,7 +29,7 @@ public class RuleDescriptionsGenerator implements CodeGeneratorConstants {
 
   public void generate() {
     File ruleDescFile = new File(directory,
-        ("simse\\explanatorytool\\RuleDescriptions.java"));
+        ("simse/explanatorytool/RuleDescriptions.java"));
     if (ruleDescFile.exists()) {
       ruleDescFile.delete(); // delete old version of file
     }

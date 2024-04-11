@@ -42,7 +42,7 @@ public class StateGenerator implements CodeGeneratorConstants {
 
     // generate outer state component:
     File stateFile = new File(options.getCodeGenerationDestinationDirectory(), 
-        ("simse\\state\\State.java"));
+        ("simse/state/State.java"));
     if (stateFile.exists()) {
       stateFile.delete(); // delete old version of file
     }

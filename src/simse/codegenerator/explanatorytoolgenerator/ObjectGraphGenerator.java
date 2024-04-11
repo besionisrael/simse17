@@ -40,7 +40,7 @@ public class ObjectGraphGenerator implements CodeGeneratorConstants {
 
   public void generate() {
     File objGraphFile = new File(directory,
-        ("simse\\explanatorytool\\ObjectGraph.java"));
+        ("simse/explanatorytool/ObjectGraph.java"));
     if (objGraphFile.exists()) {
       objGraphFile.delete(); // delete old version of file
     }

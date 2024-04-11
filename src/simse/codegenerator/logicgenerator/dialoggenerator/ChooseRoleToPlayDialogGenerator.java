@@ -38,7 +38,7 @@ public class ChooseRoleToPlayDialogGenerator implements CodeGeneratorConstants {
   public void generate() {
     try {
       crtpdFile = new File(directory,
-          ("simse\\logic\\dialogs\\ChooseRoleToPlayDialog.java"));
+          ("simse/logic/dialogs/ChooseRoleToPlayDialog.java"));
       if (crtpdFile.exists()) {
         crtpdFile.delete(); // delete old version of file
       }

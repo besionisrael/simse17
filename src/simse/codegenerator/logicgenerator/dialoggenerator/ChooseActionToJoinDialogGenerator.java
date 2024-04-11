@@ -42,7 +42,7 @@ public class ChooseActionToJoinDialogGenerator implements
   public void generate() {
     try {
       catjdFile = new File(directory,
-          ("simse\\logic\\dialogs\\ChooseActionToJoinDialog.java"));
+          ("simse/logic/dialogs/ChooseActionToJoinDialog.java"));
       if (catjdFile.exists()) {
         catjdFile.delete(); // delete old version of file
       }

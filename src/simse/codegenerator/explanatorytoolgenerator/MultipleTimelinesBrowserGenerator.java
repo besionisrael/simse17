@@ -23,7 +23,7 @@ CodeGeneratorConstants {
 
   public void generate() {
     File browserFile = new File(directory,
-        ("simse\\explanatorytool\\MultipleTimelinesBrowser.java"));
+        ("simse/explanatorytool/MultipleTimelinesBrowser.java"));
     if (browserFile.exists()) {
       browserFile.delete(); // delete old version of file
     }

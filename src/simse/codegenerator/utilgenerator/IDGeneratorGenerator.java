@@ -24,7 +24,7 @@ public class IDGeneratorGenerator implements CodeGeneratorConstants {
 
   public void generate() {
     File idGenFile = new File(options.getCodeGenerationDestinationDirectory(),
-        ("simse\\util\\IDGenerator.java"));
+        ("simse/util/IDGenerator.java"));
     if (idGenFile.exists()) {
       idGenFile.delete(); // delete old version of file
     }
