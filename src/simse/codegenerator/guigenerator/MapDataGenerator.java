@@ -188,10 +188,10 @@ public class MapDataGenerator implements CodeGeneratorConstants {
           .write("static Image computer = ImageLoader.getImageFromURL(dir + \"computer.gif\");");
       writer.write(NEWLINE);
       writer
-          .write("static Image table = ImageLoader.getImageFromURL(dir + \"table.gif\");");
+          .write("static Image table = ImageLoader.getImageFromURL(dir + \"transparent.gif\");"); //Find better gif
       writer.write(NEWLINE);
       writer
-          .write("static Image dark = ImageLoader.getImageFromURL(dir + \"dark.gif\");");
+          .write("static Image dark = ImageLoader.getImageFromURL(dir + \"transparent.gif\");"); //Find better gif
       writer.write(NEWLINE);
       writer
           .write("static Image trashcanE = ImageLoader.getImageFromURL(dir + \"trashcan_e.gif\");");
