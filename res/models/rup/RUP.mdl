@@ -3,8 +3,8 @@ false
 <endAllowHireFire>
 <beginModelOptions>
 false
-C:\Users\Emily\Documents\workspace\res\models\waterfall\icons
-C:\Users\Emily\Documents\workspace\rupGame
+D:\Workspace\eclipse-workspace\summary\simse17\res\models\waterfall\icons
+D:\Workspace\eclipse-workspace\Games17\rup17\src
 true
 true
 <endModelOptions>
@@ -2567,7 +2567,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InceptionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -3316,7 +3316,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -3400,7 +3400,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -3460,7 +3460,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InceptionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -3887,7 +3887,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InceptionPhaseOver
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -4221,7 +4221,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -4305,13 +4305,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -4329,7 +4329,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 MetCustomerThisIteration
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -5173,7 +5173,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -5257,13 +5257,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6101,7 +6101,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6203,7 +6203,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6530,7 +6530,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6632,7 +6632,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6959,7 +6959,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -7061,7 +7061,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -7388,7 +7388,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -7490,7 +7490,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -8294,7 +8294,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -8378,13 +8378,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -11051,7 +11051,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -11135,13 +11135,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -11991,7 +11991,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -12081,7 +12081,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -12135,7 +12135,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 InceptionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -13022,7 +13022,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -13082,7 +13082,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ElaborationPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -13861,7 +13861,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -13945,7 +13945,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -14438,7 +14438,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ElaborationPhaseOver
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -14753,7 +14753,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -14837,13 +14837,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -14861,7 +14861,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 MetCustomerThisIteration
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -15658,7 +15658,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -15742,13 +15742,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -15766,7 +15766,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 MetCustomerThisIteration
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -16586,7 +16586,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -16670,13 +16670,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -16694,7 +16694,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 MetCustomerThisIteration
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -17491,7 +17491,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -17575,13 +17575,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -17599,7 +17599,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 MetCustomerThisIteration
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -18432,7 +18432,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -18516,13 +18516,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -22043,7 +22043,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -22127,13 +22127,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -22983,7 +22983,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -23073,7 +23073,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -23133,7 +23133,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ElaborationPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -24014,7 +24014,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -24086,7 +24086,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -24853,7 +24853,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -24937,7 +24937,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -25442,7 +25442,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -25758,7 +25758,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -25842,13 +25842,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -25860,7 +25860,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -26735,7 +26735,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -26819,13 +26819,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -26837,7 +26837,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -27725,7 +27725,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -27809,13 +27809,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -27827,7 +27827,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OkToEndIteration
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -28133,7 +28133,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Active
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -28760,7 +28760,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -28844,13 +28844,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -28928,7 +28928,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -29367,7 +29367,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StopPrototypeSubmission
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -29651,7 +29651,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -29735,13 +29735,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -29825,7 +29825,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -30258,7 +30258,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StopPrototypeSubmission
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -30556,7 +30556,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -30640,13 +30640,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -31497,7 +31497,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -31581,13 +31581,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -39126,7 +39126,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -39210,13 +39210,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -40102,7 +40102,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -40192,7 +40192,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -40264,7 +40264,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41133,7 +41133,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41205,7 +41205,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41602,7 +41602,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41629,7 +41629,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41656,7 +41656,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41683,7 +41683,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -41710,7 +41710,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -42814,7 +42814,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -43187,7 +43187,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -43535,13 +43535,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -43565,7 +43565,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -43577,7 +43577,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -43920,7 +43920,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -44185,7 +44185,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -44269,13 +44269,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -44353,7 +44353,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -44383,7 +44383,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -45159,7 +45159,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -45243,13 +45243,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -45321,13 +45321,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -45357,7 +45357,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -46133,7 +46133,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -46223,7 +46223,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -46301,7 +46301,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -46331,7 +46331,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -47107,7 +47107,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -47197,7 +47197,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -47275,7 +47275,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -47305,7 +47305,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -48081,7 +48081,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -48171,7 +48171,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -48249,7 +48249,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -48279,7 +48279,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -49055,7 +49055,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -49145,7 +49145,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -49223,7 +49223,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -49253,7 +49253,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -50029,7 +50029,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -50113,13 +50113,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -50191,13 +50191,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -50227,7 +50227,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -50677,7 +50677,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ElaborationPhaseOver
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -51003,7 +51003,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -51093,7 +51093,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -51267,7 +51267,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 RandomEventFourOccurred
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -51966,7 +51966,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -52212,7 +52212,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 RandomEventOneOccurred
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -52870,7 +52870,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -52960,7 +52960,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -53128,7 +53128,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 RandomEventThreeOccurred
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -53846,7 +53846,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -54098,7 +54098,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 RandomEventTwoOccurred
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -54821,7 +54821,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -54905,13 +54905,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -54995,7 +54995,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -55031,7 +55031,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -55795,7 +55795,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -55879,13 +55879,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -55969,7 +55969,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -56005,7 +56005,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -56306,7 +56306,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -56390,13 +56390,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -56468,7 +56468,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -56480,7 +56480,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -56516,7 +56516,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -57280,7 +57280,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -57364,13 +57364,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -57442,7 +57442,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -57454,7 +57454,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -57490,7 +57490,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -58254,7 +58254,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -58338,13 +58338,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -58428,7 +58428,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -58464,7 +58464,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -59228,7 +59228,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -59312,13 +59312,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -59402,7 +59402,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -59438,7 +59438,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -60202,7 +60202,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -60286,13 +60286,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -60364,7 +60364,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 ConstructionPhaseOver
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -60376,7 +60376,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -60412,7 +60412,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -61176,7 +61176,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -61260,13 +61260,13 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 StaffingChosenThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
 IterationStarted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -61350,7 +61350,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -61386,7 +61386,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -62599,7 +62599,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Active
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -62761,7 +62761,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -63104,7 +63104,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -63320,7 +63320,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Active
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -63458,7 +63458,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -63482,7 +63482,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 FirstPrototypeAccepted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -63801,7 +63801,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SecondPrototypeSubmitted
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -64089,7 +64089,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 AssignedThisPhase
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -64125,7 +64125,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Idle
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -64552,7 +64552,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Idle
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -66534,7 +66534,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedInceptionDurationDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -67430,7 +67430,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedElaborationDurationDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -68326,7 +68326,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedConstructionDurationDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -137900,35 +137900,11 @@ use_case_blue.GIF
 <endGraphics>
 <beginMap>
 <beginSOPUsers>
-- Employee - SoftwareEngineer - Anne
+- Employee - SoftwareEngineer - Dwight
 true
 true
-1
-2
-
-- Employee - SoftwareEngineer - Gretchen
-true
-true
-1
-7
-
-- Employee - SoftwareEngineer - Elizabeth
-true
-true
-6
 3
-
-- Employee - SoftwareEngineer - Erica
-true
-true
-9
-0
-
-- Employee - SoftwareEngineer - Tai
-true
-true
-14
-8
+1
 
 - Employee - SoftwareEngineer - Corey
 true
@@ -137942,11 +137918,29 @@ true
 12
 2
 
-- Employee - SoftwareEngineer - Dwight
+- Employee - SoftwareEngineer - Tai
 true
 true
+14
+8
+
+- Employee - SoftwareEngineer - Elizabeth
+true
+true
+6
 3
+
+- Employee - SoftwareEngineer - Anne
+true
+true
 1
+2
+
+- Employee - SoftwareEngineer - Erica
+true
+true
+9
+0
 
 - Employee - SoftwareEngineer - Roger
 true
@@ -137959,6 +137953,12 @@ true
 true
 14
 3
+
+- Employee - SoftwareEngineer - Gretchen
+true
+true
+1
+7
 
 <endSOPUsers>
 401

@@ -3,8 +3,8 @@ false
 <endAllowHireFire>
 <beginModelOptions>
 true
-C:\Users\Emily\Documents\workspace\res\models\waterfall\icons
-C:\Users\Emily\Documents\workspace\incrementalGame
+D:\Workspace\eclipse-workspace\summary\simse17\res\models\waterfall\icons
+D:\Workspace\eclipse-workspace\Games17\increment17\src
 true
 true
 <endModelOptions>
@@ -487,7 +487,7 @@ Value: The amount by which the module influences your final score.
 
 Inflexibility: The degree to which inaccuracy will reduce your score for this module.
 
-Changability: The average number of ticks that it will take for a change to take place on this module. Each change will reduce the module’s accuracy.
+Changability: The average number of ticks that it will take for a change to take place on this module. Each change will reduce the moduleï¿½s accuracy.
 
 Accuracy: This represents how accurately the project represents what the customer wants. Keep in mind that this is orthogonal to the completeness of the project.
 
@@ -498,11 +498,11 @@ Risk analysis: Reveals the value, inflexibility and changability of the module w
 
 Difficulty Analysis: Reveals the difficulty of each of the actions for this module, with a small amount of error.
 
-Requirements: Increases ease of design, increases the project’s accuracy and reduces the changability
+Requirements: Increases ease of design, increases the projectï¿½s accuracy and reduces the changability
 
 Design: Increases ease of implementation and integration, makes it easier to evolve code
 
-Implementation: Determines the module’s overall completeness
+Implementation: Determines the moduleï¿½s overall completeness
 
 Evolution: Increases accuracy, but decreases design
 
@@ -510,7 +510,7 @@ Integrate: You must integrate modules to submit a multiple-module build to the c
 
 Start over: Removes most of the progress from most of your phases
 
-Submission to user: Many attributes are roughly revealed, the difficulty of all lifecycle phases is reduced, changability is greatly reduced and the requirements difficulty of all other modules is reduced as well. The usefulness of this action depends on the module’s implementation completeness and accuracy.
+Submission to user: Many attributes are roughly revealed, the difficulty of all lifecycle phases is reduced, changability is greatly reduced and the requirements difficulty of all other modules is reduced as well. The usefulness of this action depends on the moduleï¿½s implementation completeness and accuracy.
 
 Submission of a multiple-module build: If you have fully integrated more than one module, you may submit them as a single large build, which carries even greater benefits than a single module submission.
 
@@ -6015,7 +6015,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Initialized
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -16900,17 +16900,17 @@ emily.gif
 <endGraphics>
 <beginMap>
 <beginSOPUsers>
-- Employee - SoftwareEngineer - Amy
-true
-true
-10
-3
-
 - Employee - SoftwareEngineer - Bob
 true
 true
 12
 2
+
+- Employee - SoftwareEngineer - Amy
+true
+true
+10
+3
 
 - Employee - SoftwareEngineer - Lola
 true

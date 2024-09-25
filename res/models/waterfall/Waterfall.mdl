@@ -3,8 +3,8 @@ false
 <endAllowHireFire>
 <beginModelOptions>
 true
-C:\Users\Emily\Documents\workspace\res\models\waterfall\icons
-C:\Users\Emily\Documents\workspace\waterfallGame
+D:\Workspace\eclipse-workspace\summary\simse17\res\models\waterfall\icons
+D:\Workspace\eclipse-workspace\Games17\waterfall17\src
 true
 true
 <endModelOptions>
@@ -1218,7 +1218,7 @@ ProductivityInCodingUnadjusted
 <endInstantiatedAttribute>
 <beginInstantiatedAttribute>
 ErrorRateInRequirementsUnadjusted
-0.0050
+0.005
 <endInstantiatedAttribute>
 <beginInstantiatedAttribute>
 ErrorRateInDesignUnadjusted
@@ -2386,7 +2386,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -2572,7 +2572,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -4079,7 +4079,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -5083,7 +5083,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -5269,7 +5269,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -6221,7 +6221,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -6461,7 +6461,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -7765,7 +7765,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -8944,7 +8944,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -9184,7 +9184,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -10257,7 +10257,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -10587,7 +10587,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -11976,7 +11976,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -13438,7 +13438,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -13768,7 +13768,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -15008,7 +15008,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -15338,7 +15338,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -16751,7 +16751,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -16847,7 +16847,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -17991,7 +17991,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -18321,7 +18321,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -19535,7 +19535,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -20714,7 +20714,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -20954,7 +20954,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-true
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -22377,7 +22377,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -22739,7 +22739,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -25841,7 +25841,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 OnBreak
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -26275,7 +26275,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -26308,7 +26308,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -26341,7 +26341,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -26374,7 +26374,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 Purchased
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -26991,7 +26991,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedRequirementsDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -27563,7 +27563,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedDesignDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -28135,7 +28135,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedImplementationIntegrationDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <beginActionTypeParticipantAttributeConstraint>
@@ -28707,7 +28707,7 @@ false
 <beginActionTypeParticipantAttributeConstraint>
 SuggestedTestDone
 =
-false
+<>
 false
 <endActionTypeParticipantAttributeConstraint>
 <endActionTypeParticipantConstraint>
@@ -43443,6 +43443,30 @@ eddie_murphy.gif
 <endGraphics>
 <beginMap>
 <beginSOPUsers>
+- Employee - SoftwareEngineer - Emily
+true
+true
+13
+2
+
+- Employee - SoftwareEngineer - Mimi
+true
+true
+2
+7
+
+- Employee - SoftwareEngineer - Anita
+true
+true
+13
+8
+
+- Employee - SoftwareEngineer - Roger
+true
+true
+5
+8
+
 - Employee - SoftwareEngineer - Andre
 true
 true
@@ -43454,30 +43478,6 @@ true
 true
 7
 1
-
-- Employee - SoftwareEngineer - Roger
-true
-true
-5
-8
-
-- Employee - SoftwareEngineer - Anita
-true
-true
-13
-8
-
-- Employee - SoftwareEngineer - Mimi
-true
-true
-2
-7
-
-- Employee - SoftwareEngineer - Emily
-true
-true
-13
-2
 
 - Employee - SoftwareEngineer - Calvin
 true
