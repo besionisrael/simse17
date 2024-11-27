@@ -90,7 +90,7 @@ public class SimSEMap extends JPanel implements MouseListener, ActionListener {
 		
 		    while (ssObj.hasMoreElements()) {
 		      SimSEObject simObj = ssObj.nextElement();
-		      String tmpIconLoc = options.getIconDirectory().getPath() + "\\"
+		      String tmpIconLoc = options.getIconDirectory().getPath() + "/"
 		          + ssImg.nextElement();
 		
 		      int type = simObj.getSimSEObjectType().getType();
@@ -126,7 +126,7 @@ public class SimSEMap extends JPanel implements MouseListener, ActionListener {
 		    // load the rule objects
 		    while (rObj.hasMoreElements()) {
 		      SimSEObject simObj = rObj.nextElement();
-		      String tmpIconLoc = options.getIconDirectory().getPath() + "\\"
+		      String tmpIconLoc = options.getIconDirectory().getPath() + "/"
 		          + rImg.nextElement();
 		
 		      int type = simObj.getSimSEObjectType().getType();
