@@ -311,7 +311,7 @@ public class GraphicsBuilderGUI extends JPanel implements ActionListener {
 				if (isImageFile(pictureFiles[i])) { // to prevent non-image files from
 																						// being loaded
 					ImageIcon img = new ImageIcon(imageDir.getPath().concat(
-							"\\" + pictureFiles[i]));
+							"/" + pictureFiles[i]));
 					imagesToFilenames.put(img, pictureFiles[i]);
 					JButton button = new JButton(img);
 					button.addActionListener(this);
